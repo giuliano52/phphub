@@ -39,7 +39,7 @@ function emit_question($data_quiz,$single_quiz_data) {
 	echo "</td>\n<td>";
 	foreach ($single_quiz_data['answers'] as $key_answer) {
 		
-		echo '<input type="radio" name="q_id'.$single_quiz_data['question_index'].'" value="'.$key_answer.'">';
+		echo '<input type="radio" name="q_'.$single_quiz_data['question_index'].'" value="'.$key_answer.'">';
 		echo $data_quiz[$key_answer]["Capitale"];
 		echo "<br>\n"; 
 		}
