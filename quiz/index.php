@@ -111,16 +111,42 @@ function cmd_quiz() {
 
 function emit_result() {
 	
-	print_r($_SESSION['data_quiz']);
-	print_r($_REQUEST);
+	
 	$data_quiz =$_SESSION['data_quiz'];
+	$num_correct_answer = 0;
+	$num_wrong_answer = 0;
 	
-	
-	
+	echo '<table border="1">';
 	for($question_index = 0; $question_index < count($data_quiz); ++$question_index) {
-		echo "TODO";
+		$answer = test_input($_REQUEST['q_'.$question_index]);
+		$correct_answer = $data_quiz[$question_index]['Capitale'];
+		echo '<tr>';
+		echo '<td>'.$data_quiz[$question_index]['Nazione'].'</td>';
+
+		if ($correct_answer == $answer) {
+			// Correct answer
+			echo '<td style="background-color:green;">';
+			echo $answer;
+			echo "</td>\n";
+			$num_correct_answer ++;
+			}
+		else {
+			// wrong answer
+			echo '<td style="background-color:red;">';
+			echo 'hai risposto :'.$answer.'<br />';
+			echo 'Ma la risposta giusta era:'.$correct_answer.'<br />';
+			echo "</td>\n";
+			$num_wrong_answer ++;
+			
+		}
+		
+		echo '</tr>';
 	}
-	echo '<A href="'.htmlspecialchars($_SERVER["PHP_SELF"]).'">BACK</A>';
+	echo "</table>\n";
+	
+	echo 'hai risposto giusto '.$num_correct_answer.' su '.($num_correct_answer+$num_wrong_answer).' domande';
+	
+	echo '<br /><A href="'.htmlspecialchars($_SERVER["PHP_SELF"]).'">BACK</A>';
 }
 
 
@@ -131,6 +157,11 @@ session_start();
 $_SESSION['Num_options'] = 3;
 
 $cmd = isset($_REQUEST['cmd']) ? test_input($_REQUEST['cmd']) : "None";
+
+// add answer to session 
+foreach($_REQUEST as $single_request) {
+	print ($_single_request);
+}
 
 
 
