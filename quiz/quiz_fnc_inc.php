@@ -47,7 +47,10 @@ function cmd_inizialize_quiz($quiz_name) {
 		$num_question = count($data_quiz_src);
 	$_SESSION['Num_question_total'] = $num_question;
 	
+	// insert data from csv to $data_quiz
 	for($question_id = 0 ; $question_id < $num_question; $question_id++) {
+		$difficult_level = isset($data_quiz_src[$question_id]) ? $data_quiz_src[$question_id][difficult_level] : 0 ;
+		print $difficult_level . "-";
 		$data_quiz[$question_id] = $data_quiz_src[$question_id];
 		shuffle($all_possible_answer);
 		$data_quiz[$question_id]["possible_answer"]=array_slice($all_possible_answer,0,$_SESSION['Num_options']) ;
@@ -136,7 +139,7 @@ function cmd_store_answers() {
 function cmd_reset_quiz() {
 
 	session_destroy();
-	echo "session distroyed";
+	// print "session distroyed";
 }
  
 ?>

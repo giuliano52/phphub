@@ -58,9 +58,9 @@ function emit_quiz_footer($starting_question,$all_answered) {
 
 function emit_footer() {
 echo '<br /><br /><br /><br /><br />';
-echo '<br /><A href="'.htmlspecialchars($_SERVER["PHP_SELF"]).'">START</A>';
-echo '<br /><A href="'.htmlspecialchars($_SERVER["PHP_SELF"]).'?cmd=results">Result</A>';
-echo '<br /><A href="'.htmlspecialchars($_SERVER["PHP_SELF"]).'?cmd=reset_quiz">RESET</A>';
+//echo '<br /><A href="'.htmlspecialchars($_SERVER["PHP_SELF"]).'">START</A>';
+//echo '<br /><A href="'.htmlspecialchars($_SERVER["PHP_SELF"]).'?cmd=results">Result</A>';
+echo '<br /><A href="'.htmlspecialchars($_SERVER["PHP_SELF"]).'?cmd=reset_quiz">Ricomincia</A>';
 echo '</body></html>
 ';
 }
