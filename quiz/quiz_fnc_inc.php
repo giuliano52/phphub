@@ -34,6 +34,7 @@ function test_input($data) {
 }
 
 function cmd_inizialize_quiz($quiz_name) {
+
 	$data_quiz=csv_to_array($quiz_name);
 	shuffle($data_quiz);
 	$all_possible_answer = array_column_1($data_quiz,"correct_answer");
@@ -52,12 +53,10 @@ function cmd_inizialize_quiz($quiz_name) {
 
 function cmd_quiz($quiz_name,$starting_question=0) {
 	
+	// check id data_quiz is already in the session 
 	$data_quiz = isset($_SESSION['data_quiz']) ? $_SESSION['data_quiz'] : cmd_inizialize_quiz($quiz_name);
+	
 	emit_quiz_header();
-	
-	
-
-	
 	// calculate the number of question 
 	if ($_SESSION['Num_question_total'] > 0) 
 		$num_question = min(count($data_quiz),$_SESSION['Num_question_total']) ;
@@ -65,25 +64,15 @@ function cmd_quiz($quiz_name,$starting_question=0) {
 		$num_question = count($data_quiz);
 		
 	
+	
 	for($question_index = $starting_question; $question_index < $num_question; ++$question_index) {
-	
-		$single_quiz_data['question_index']=$question_index;
-		$single_quiz_data['answers'] = array_rand($data_quiz, $_SESSION['Num_options'] );
-	
-		shuffle($single_quiz_data['answers']);	
-		if (!in_array($question_index, $single_quiz_data['answers'])) {
-			$single_quiz_data['answers'][0]=$question_index;
-			shuffle($single_quiz_data['answers']);
-		}
-		
-
-	emit_question($data_quiz,$single_quiz_data);
-	$_SESSION['data_quiz'] = $data_quiz;
-	$_SESSION['single_quiz_data'] = $single_quiz_data;
+		emit_question($data_quiz[$question_index],$question_index);
 	}
 	emit_quiz_footer();
 
 }
+
+
 
 
 function array_column_1(array $input, $columnKey, $indexKey = null) {
@@ -115,6 +104,21 @@ function array_column_1(array $input, $columnKey, $indexKey = null) {
    
         return $result;
     }
+function cmd_store_answers() {
+	foreach($_REQUEST as $key=>$val) {
+		if(substr($key,0,2)=="q_") {
+			$id = substr($key,2) ;
+			$_SESSION['data_quiz'][$id]["answered_question"] = $val;
+		}
+		
+	}
+	
+}
 
+function cmd_reset_quiz() {
+
+	session_destroy();
+	echo "session distroyed";
+}
  
 ?>
