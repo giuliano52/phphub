@@ -9,16 +9,17 @@
 
 
 function emit_question($single_quiz_data,$question_index) {
-
+	$answer = isset($single_quiz_data[answered_question]) ? $single_quiz_data[answered_question] : "";
 	echo "<tr><td>\n";
 	echo $question_index;
 	echo "</td>\n";
 	echo "<td>\n";
 	echo $single_quiz_data["question"];
 	echo "</td>\n<td>";
+	
 	foreach ($single_quiz_data['possible_answer'] as $possible_answer) {
-		
-		echo '<input type="radio" name="q_'.$question_index.'" value="'.$possible_answer.'">';
+		$checked = ($answer == $possible_answer) ? " checked " : "";
+		echo '<input type="radio" name="q_'.$question_index.'" value="'.$possible_answer.'" '.$checked.'>';
 		echo $possible_answer;
 		echo "<br>\n"; 
 		}
@@ -72,11 +73,23 @@ function emit_result() {
 
 	$num_question = count($data_quiz);
 
+	for($question_index = 0; $question_index < $num_question; ++$question_index) {
+		$answer  = $data_quiz[$question_index]["answered_question"];
+		$correct_answer = $data_quiz[$question_index]["correct_answer"];
+		if ($correct_answer == $answer) {
+			$num_correct_answer ++;
+		}
+		else {
+			$num_wrong_answer ++;
+		}
+	}
+	echo '<table border="1">';
+	echo '<tr><td>';
 	echo '<table border="1">';
 	for($question_index = 0; $question_index < $num_question; ++$question_index) {
 		$answer  = $data_quiz[$question_index]["answered_question"];
 		$correct_answer = $data_quiz[$question_index]["correct_answer"];
-			echo '<tr>';
+		echo '<tr>';
 		echo '<td>'.$data_quiz[$question_index]["question"].'</td>';
 
 		if ($correct_answer == $answer) {
@@ -84,7 +97,7 @@ function emit_result() {
 			echo '<td style="background-color:green;">';
 			echo $answer;
 			echo "</td>\n";
-			$num_correct_answer ++;
+
 			}
 		else {
 			// wrong answer
@@ -92,12 +105,18 @@ function emit_result() {
 			echo 'hai risposto :'.$answer.'<br />';
 			echo 'Ma la risposta giusta era:'.$correct_answer.'<br />';
 			echo "</td>\n";
-			$num_wrong_answer ++;
 		}
 		echo '</tr>';
 	}
 	echo "</table>\n";
+	echo "</td><td>";
 	echo 'hai risposto giusto '.$num_correct_answer.' su '.$num_question.' domande';
+	if($num_correct_answer == $num_question) {
+		$img = choose_file("img/congratulation/");
+		echo '<br /><img src="img/congratulation/'.$img.'">';
+	}
+	echo "</td></tr>";
+	echo "</table>";
 }
 
 
