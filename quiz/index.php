@@ -1,7 +1,7 @@
 <?php
 /* Author: GD
  * Created: 20131129
- * Modified: 20131129
+ * Modified: 20131223
  *
  *
  */
@@ -10,7 +10,6 @@ require_once('conf.php');
 require_once('quiz_emit_inc.php');
 require_once('quiz_fnc_inc.php');
 error_reporting(E_ALL);
-
 
 
  
