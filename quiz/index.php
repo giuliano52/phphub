@@ -5,23 +5,14 @@
  *
  *
  */
+
+require_once('conf.php');
 require_once('quiz_emit_inc.php');
 require_once('quiz_fnc_inc.php');
 error_reporting(E_ALL);
 
 
-function initialize_session() {
-	session_start(); 
 
-	$_SESSION['Num_options'] = 5;
-	$_SESSION['Num_question_per_page'] = 1 ;  // 0 means no limits
-	$_SESSION['Num_question_total'] = 3 ;  // 0 means no limits
-	$_SESSION['min_diffucult_level'] = 0; // min 0
-	$_SESSION['max_diffucult_level'] = 100; // max 100
-	$_SESSION['Quiz_name'] = 'quiz_bandiere.csv';
-	$_SESSION['Quiz_name'] = 'quiz_capitali.csv';
-
-}
  
 // ------------------------- MAIN --------------------
 
@@ -40,6 +31,8 @@ elseif (isset($_REQUEST['Nav']) && $_REQUEST['Nav'] == "Prossimo")
 	$starting_question = $next_starting_question;
 
 emit_header();
+
+choose_cvs_entry($_SESSION['congratulation_file']);
 
 switch($cmd) {
     case "reset_quiz";

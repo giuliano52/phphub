@@ -6,8 +6,6 @@
  *
  */
  
-
-
 function emit_question($single_quiz_data,$question_index) {
 	$answer = isset($single_quiz_data[answered_question]) ? $single_quiz_data[answered_question] : "";
 	echo "<tr><td>\n";
@@ -24,7 +22,6 @@ function emit_question($single_quiz_data,$question_index) {
 		echo "<br>\n"; 
 		}
 	echo "</td></tr>";
-
 }
 
 function emit_header() {
@@ -112,8 +109,9 @@ function emit_result() {
 	echo "</td><td>";
 	echo 'hai risposto giusto '.$num_correct_answer.' su '.$num_question.' domande';
 	if($num_correct_answer == $num_question) {
-		$img = choose_file("img/congratulation/");
-		echo '<br /><img src="img/congratulation/'.$img.'">';
+		// $img = 'img/congratulation/'.choose_file("img/congratulation/");
+		$img = choose_cvs_entry($_SESSION['congratulation_file']);
+		echo '<br /><img src="'.$img.'">';
 	}
 	echo "</td></tr>";
 	echo "</table>";

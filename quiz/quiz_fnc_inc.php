@@ -149,6 +149,13 @@ function cmd_reset_quiz() {
 	// print "session distroyed";
 }
 
+function choose_cvs_entry($csv_file) {
+	/* Return a random element from a csv_file */
+	$csv_array = csv_to_array($csv_file);
+	return $csv_array[array_rand($csv_array)][url];
+
+}
+
 function choose_file($dir) {
 	$a_dir = array();
 	if ($handle = opendir($dir)) {
