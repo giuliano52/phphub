@@ -1,0 +1,20 @@
+<?php
+
+function initialize_session() {
+	session_start(); 
+
+	$_SESSION['Num_options'] = 2;
+	$_SESSION['Num_question_per_page'] = 1 ;  // 0 means no limits
+	$_SESSION['Num_question_total'] = 3 ;  // 0 means no limits
+	$_SESSION['min_diffucult_level'] = 0; // min 0
+	$_SESSION['max_diffucult_level'] = 100; // max 100
+	$_SESSION['congratulation_file'] = 'data/congratulation.csv';
+
+
+	
+	$_SESSION['Quiz_name'] = 'data/quiz_bandiere.csv';
+	$_SESSION['Quiz_name'] = 'data/quiz_capitali.csv';
+	
+}
+
+?>
