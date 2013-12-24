@@ -4,36 +4,33 @@ PHP
 		$=array("1","2","3");
 		foreach($a as $valore) {echo $valore;}
 		
-Acceleratore:
+#Acceleratore:
 aptitude install php-apc
-Funzioni utili
-phpinfo()
+#Funzioni utili
 Per provare il PHP
-base64_encode / base64_decode
+		phpinfo()
 Per Passare i parametri con spazi ed altro uso le funzioni
-strip_tags 
+		base64_encode / base64_decode
 Per eliminare i tag HTML
-htmlentities($string)
+		strip_tags 
 Per trasformare una stringa con 'è' '>' '&' ... in una con i caratteri HTML &egrave; ...
-htmlspecialchar($string)
+		htmlentities($string)
 Come sopra solo che trasforma esclusivamente: < > & " 
-ereg("ab",$string)
+		htmlspecialchar($string)
 Per verificare se una stringa contiene un valore
-true se $string contiene ab
-var_dump		
-var_export
-print_r		
+		ereg("ab",$string)
+		true se $string contiene ab
 Mostra tutto il contenuto di un array
-pathinfo
+		var_dump		
+		var_export
+		print_r		
 Mostra i dettagli di un file
-
-$path_parts = pathinfo('/www/htdocs/index.html');
-$path_parts['dirname']	 	-> 	/www/htdocs
-$path_parts['basename'] 	-> 	index.html
-$path_parts['extension'] 	-> 	html
-$path_parts['filename'] 	-> 	index
-
-
+		pathinfo
+		$path_parts = pathinfo('/www/htdocs/index.html');
+		$path_parts['dirname']	 	-> 	/www/htdocs
+		$path_parts['basename'] 	-> 	index.html
+		$path_parts['extension'] 	-> 	html
+		$path_parts['filename'] 	-> 	index
 
 #Files
 per analizzare un file:
