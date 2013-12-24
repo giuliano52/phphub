@@ -4,9 +4,11 @@ PHP
 		$=array("1","2","3");
 		foreach($a as $valore) {echo $valore;}
 		
-#Acceleratore:
-aptitude install php-apc
+#Acceleratore
+		aptitude install php-apc
+
 #Funzioni utili
+
 Per provare il PHP
 		phpinfo()
 Per Passare i parametri con spazi ed altro uso le funzioni
