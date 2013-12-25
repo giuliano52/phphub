@@ -1,60 +1,72 @@
 PHP
 ===
 #Array
-		$=array("1","2","3");
-		foreach($a as $valore) {echo $valore;}
+    $=array("1","2","3");
+    foreach($a as $valore) {echo $valore;}
 		
 #Acceleratore
-		aptitude install php-apc
+    aptitude install php-apc
 
 #Funzioni utili
-
 Per provare il PHP
-		phpinfo()
+
+    phpinfo();
 Per Passare i parametri con spazi ed altro uso le funzioni
-		base64_encode / base64_decode
+
+    base64_encode / base64_decode
 Per eliminare i tag HTML
-		strip_tags 
-Per trasformare una stringa con 'è' '>' '&' ... in una con i caratteri HTML &egrave; ...
-		htmlentities($string)
+
+    strip_tags 
+Per trasformare una stringa con 'ï¿½' '>' '&' ... in una con i caratteri HTML &egrave; ...
+
+    htmlentities($string)
 Come sopra solo che trasforma esclusivamente: < > & " 
-		htmlspecialchar($string)
+
+    htmlspecialchar($string)
 Per verificare se una stringa contiene un valore
-		ereg("ab",$string)
-		true se $string contiene ab
+
+    ereg("ab",$string)
+    true se $string contiene ab
 Mostra tutto il contenuto di un array
-		var_dump		
-		var_export
-		print_r		
+
+    var_dump		
+    var_export
+    print_r		
 Mostra i dettagli di un file
-		pathinfo
-		$path_parts = pathinfo('/www/htdocs/index.html');
-		$path_parts['dirname']	 	-> 	/www/htdocs
-		$path_parts['basename'] 	-> 	index.html
-		$path_parts['extension'] 	-> 	html
-		$path_parts['filename'] 	-> 	index
+
+    pathinfo
+    $path_parts = pathinfo('/www/htdocs/index.html');
+    $path_parts['dirname']	 	-> 	/www/htdocs
+    $path_parts['basename'] 	-> 	index.html
+    $path_parts['extension'] 	-> 	html
+    $path_parts['filename'] 	-> 	index
 
 #Files
 per analizzare un file:
-$lines = file ("nomefile.txt");
-foreach ($lines as $line_num => $line) {
-    echo "Line #<b>{$line_num}</b> : " . htmlspecialchars($line) . "<br>\n";
-}
+
+    $lines = file ("nomefile.txt");
+    foreach ($lines as $line_num => $line) {
+        echo "Line #<b>{$line_num}</b> : " . htmlspecialchars($line) . "<br>\n";
+    }
 
 Elenca tutti i file della directory ed elimina . e ..
-$sDir = "/tmp/";
-// Open a known directory, and proceed to read its contents
-if (is_dir($sDir)) {
-   if ($dh = opendir($sDir)) {
-     while (($file = readdir($dh)) !== false) {
+```php
+    $sDir = "/tmp/";
+    // Open a known directory, and proceed to read its contents
+    if (is_dir($sDir)) {
+        if ($dh = opendir($sDir)) {
+            while (($file = readdir($dh)) !== false) {
 	        if ($file != "." && $file != "..") {
-				echo "filename: <b>$file</b> <br />\n";
-			} 
-       }
+		    echo "filename: <b>$file</b> <br />\n";
+		} 
+           }
        closedir($dh);
-   }
-}
+       }
+    }
+```
+
 #Sqlite
+```php
 if ($db = sqlite_open("dati.sqlite", 0666, $sqliteerror)) {
 $query = <<<EOD
 CREATE TABLE patch (
@@ -75,9 +87,10 @@ while ($row = sqlite_fetch_array($result)) {
 	$linea = $row['computer'] . "---" . $row['bulletin'] . "---" . $row['criticita']."+++" ;
  	echo "$linea\n";
 }
+```
 
 #Esecuzione di comandi di sitema con permessi elevati
-Se fosse necessario di eseguire comandi con permessi più elevati bisogna lanciare il comando
+Se fosse necessario di eseguire comandi con permessi piÃ¹ elevati bisogna lanciare il comando
 sudo visudo 
 e poi aggiungere :
 www-data ALL=NOPASSWD: /sbin/iptables, /usr/bin/du
@@ -85,7 +98,7 @@ Per ad esempio permettere iptable e du
 oppure:
 www-data ALL=NOPASSWD: ALL
 per tutti i comandi.
-Nello script php si può ora lanciare il comando:
+Nello script php si puÃ¹ ora lanciare il comando:
 exec ("sudo iptables -P FORWARD ACCEPT");
 
 #Upload
@@ -94,8 +107,9 @@ upload_max_filesize 20M
 post_max_size 20M
 max_execution_time 200
 max_input_time 200
-Attenzione si può anche impostare 1G ma non 2G (va oltre il limite consentito)
+Attenzione si puï¿½ anche impostare 1G ma non 2G (va oltre il limite consentito)
 index.php
+```php
 <html>
 <body>
 
@@ -127,15 +141,15 @@ upload.php
 ?>
 </body>
 </html>
-
+```
 #Mail
-Si può usare il comando mail:
+Si puï¿½ usare il comando mail:
 mail( $destinatario,$oggetto , $messaggio, $intestazioni );
-se il mittente è nella forma:
+se il mittente ï¿½ nella forma:
 $intestazioni = "From: $from\nReply-To: $from\nContent-Type: text/html";
 la mail diventa di tipo HTML
 
-esempio più completo:
+esempio piï¿½ completo:
 $to = "viralpatel.net@gmail.com";
 $subject = "VIRALPATEL.net";
 $body = "Body of your message here you can use HTML too. e.g. <br> <b> Bold </b>";
@@ -225,7 +239,9 @@ echo ($a > 5 ? "big" : "small");
 ?>
 
 #Stringhe
+```php
 $out = <<<EOF
 <a href="ordini.php">visualizza rodini</a>
 <a href="amm.php">gestione articoli</a>
-EOF;		
+EOF;
+```
