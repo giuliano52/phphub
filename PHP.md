@@ -11,8 +11,9 @@ foreach($a as $valore) {
     aptitude install php-apc
 
 #Funzioni utili
-Per provare il PHP ```phpinfo(); ```
+Per provare il PHP
 
+    phpinfo();
 Per Passare i parametri con spazi ed altro uso le funzioni
 
     base64_encode / base64_decode
@@ -26,9 +27,10 @@ Come sopra solo che trasforma esclusivamente: < > & "
 
     htmlspecialchar($string)
 Per verificare se una stringa contiene un valore
-
-    ereg("ab",$string)
-    true se $string contiene ab
+```php
+ereg("ab",$string)
+true se $string contiene ab
+```
 Mostra tutto il contenuto di un array
 
     var_dump		
@@ -93,25 +95,32 @@ while ($row = sqlite_fetch_array($result)) {
 
 #Esecuzione di comandi di sitema con permessi elevati
 Se fosse necessario di eseguire comandi con permessi più elevati bisogna lanciare il comando
-```bash
-sudo visudo 
-```
+
+    sudo visudo 
 e poi aggiungere :
-www-data ALL=NOPASSWD: /sbin/iptables, /usr/bin/du
+
+    www-data ALL=NOPASSWD: /sbin/iptables, /usr/bin/du
+    
 Per ad esempio permettere iptable e du
+
 oppure:
-www-data ALL=NOPASSWD: ALL
+
+    www-data ALL=NOPASSWD: ALL
 per tutti i comandi.
 Nello script php si puù ora lanciare il comando:
-exec ("sudo iptables -P FORWARD ACCEPT");
+
+    exec ("sudo iptables -P FORWARD ACCEPT");
 
 #Upload
 Bisogna impostare i seguenti limiti nel file php.ini se si vuole fare l'upload di file di grosse dimensioni
-upload_max_filesize 20M
-post_max_size 20M
-max_execution_time 200
-max_input_time 200
-Attenzione si pu� anche impostare 1G ma non 2G (va oltre il limite consentito)
+
+    upload_max_filesize 20M
+    post_max_size 20M
+    max_execution_time 200
+    max_input_time 200
+    
+Attenzione si può anche impostare 1G ma non 2G (va oltre il limite consentito)
+
 index.php
 ```php
 <html>
@@ -124,8 +133,9 @@ index.php
 
 </body>
 </html>
-
+```
 upload.php
+```php
 <html>
 <body>
 <?PHP
@@ -147,13 +157,17 @@ upload.php
 </html>
 ```
 #Mail
-Si pu� usare il comando mail:
-mail( $destinatario,$oggetto , $messaggio, $intestazioni );
-se il mittente � nella forma:
-$intestazioni = "From: $from\nReply-To: $from\nContent-Type: text/html";
+Si può usare il comando mail:
+
+    mail( $destinatario,$oggetto , $messaggio, $intestazioni );
+
+se il mittente è nella forma:
+
+    $intestazioni = "From: $from\nReply-To: $from\nContent-Type: text/html";
 la mail diventa di tipo HTML
 
-esempio pi� completo:
+esempio più completo:
+```php
 $to = "viralpatel.net@gmail.com";
 $subject = "VIRALPATEL.net";
 $body = "Body of your message here you can use HTML too. e.g. <br> <b> Bold </b>";
@@ -164,16 +178,19 @@ $headers .= "X-Mailer: PHP5\n";
 $headers .= 'MIME-Version: 1.0' . "\n";
 $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 mail($to,$subject,$body,$headers);
+```
 
 Validazione email:
+```php
 $email = $_POST['email'];
 if(preg_match("~([a-zA-Z0-9!#$%&amp;'*+-/=?^_`{|}~])@([a-zA-Z0-9-]).([a-zA-Z0-9]{2,4})~",$email)) {
 	echo 'This is a valid email.';
 } else{
 	echo 'This is an invalid email.';
 } 
-
+```
 #XML
+```php
 //this is a sample xml string
 $xml_string="<?xml version='1.0'?>
 <moleculedb>
@@ -199,37 +216,43 @@ foreach ($xml->molecule as $record)
    echo $record->symbol, '  ';
    echo $record->code, '<br />';
 }
-
+```
 
 #JSON
 
 
 Following is the PHP code to create the JSON data format of above example using array of PHP.
-
+```php
 $json_data = array ('id'=>1,'name'=>"rolf",'country'=>'russia',"office"=>array("google","oracle"));
 echo json_encode($json_data);
-
+```
 Following code will parse the JSON data into PHP arrays.
-
+```php
 $json_string='{"id":1,"name":"rolf","country":"russia","office":["google","oracle"]} ';
 $obj=json_decode($json_string);
 //print the parsed data
 echo $obj->name; //displays rolf
 echo $obj->office[0]; //displays google
-
+```
 #Varie
 Per vedere tutti i parametri passati con un POST
+```php
 echo "Values submitted via POST method:<br />\n";
 reset ($_POST);
 while (list ($key, $val) = each ($_POST)) {
     echo "$key => $val<br />\n";
 }
+```
 le variabili da POST GET:
-$_GET["ID"]
+
+    $_GET["ID"]
 per eliminare I warnings dall'html: in php.ini:
-	error_reporting = E_ALL & ~E_notice & ~E_warnings
-service httpd restart
-Alternativo IF
+
+    error_reporting = E_ALL & ~E_notice & ~E_warnings
+    service httpd restart
+
+Alternativo IF 
+```php
 <?php
 if ($a > 5) {
    echo "big";
@@ -241,6 +264,7 @@ can be replaced by:
 <?php
 echo ($a > 5 ? "big" : "small");
 ?>
+```
 
 #Stringhe
 ```php
