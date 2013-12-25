@@ -1,16 +1,18 @@
 PHP
 ===
 #Array
-    $=array("1","2","3");
-    foreach($a as $valore) {echo $valore;}
-		
+```php
+$a=array("1","2","3");
+foreach($a as $valore) {
+	echo $valore;
+	}
+```		
 #Acceleratore
     aptitude install php-apc
 
 #Funzioni utili
-Per provare il PHP
+Per provare il PHP ```phpinfo(); ```
 
-    phpinfo();
 Per Passare i parametri con spazi ed altro uso le funzioni
 
     base64_encode / base64_decode
@@ -33,14 +35,14 @@ Mostra tutto il contenuto di un array
     var_export
     print_r		
 Mostra i dettagli di un file
-
-    pathinfo
-    $path_parts = pathinfo('/www/htdocs/index.html');
-    $path_parts['dirname']	 	-> 	/www/htdocs
-    $path_parts['basename'] 	-> 	index.html
-    $path_parts['extension'] 	-> 	html
-    $path_parts['filename'] 	-> 	index
-
+```php
+pathinfo
+$path_parts = pathinfo('/www/htdocs/index.html');
+$path_parts['dirname']	 	-> 	/www/htdocs
+$path_parts['basename'] 	-> 	index.html
+$path_parts['extension'] 	-> 	html
+$path_parts['filename'] 	-> 	index
+```
 #Files
 per analizzare un file:
 
@@ -51,18 +53,18 @@ per analizzare un file:
 
 Elenca tutti i file della directory ed elimina . e ..
 ```php
-    $sDir = "/tmp/";
-    // Open a known directory, and proceed to read its contents
-    if (is_dir($sDir)) {
-        if ($dh = opendir($sDir)) {
-            while (($file = readdir($dh)) !== false) {
-	        if ($file != "." && $file != "..") {
-		    echo "filename: <b>$file</b> <br />\n";
-		} 
-           }
-       closedir($dh);
-       }
-    }
+$sDir = "/tmp/";
+// Open a known directory, and proceed to read its contents
+if (is_dir($sDir)) {
+	if ($dh = opendir($sDir)) {
+		while (($file = readdir($dh)) !== false) {
+			if ($file != "." && $file != "..") {
+				echo "filename: <b>$file</b> <br />\n";
+			} 
+		}
+		closedir($dh);
+	}
+}
 ```
 
 #Sqlite
@@ -91,7 +93,9 @@ while ($row = sqlite_fetch_array($result)) {
 
 #Esecuzione di comandi di sitema con permessi elevati
 Se fosse necessario di eseguire comandi con permessi più elevati bisogna lanciare il comando
+```bash
 sudo visudo 
+```
 e poi aggiungere :
 www-data ALL=NOPASSWD: /sbin/iptables, /usr/bin/du
 Per ad esempio permettere iptable e du
