@@ -19,8 +19,8 @@ Per Passare i parametri con spazi ed altro uso le funzioni
     base64_encode / base64_decode
 Per eliminare i tag HTML
 
-    strip_tags 
-Per trasformare una stringa con '�' '>' '&' ... in una con i caratteri HTML &egrave; ...
+    strip_tags($string) 
+Per trasformare una stringa con 'è' '>' '&' ... in una con i caratteri HTML `&egrave;` ...
 
     htmlentities($string)
 Come sopra solo che trasforma esclusivamente: < > & " 
