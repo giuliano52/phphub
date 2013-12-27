@@ -47,10 +47,11 @@ function emit_quiz_footer($starting_question,$all_answered) {
 		echo '<A href="'.htmlspecialchars($_SERVER["PHP_SELF"]).'?cmd=results">Risultati</A>';
 	}
 	else {
+		echo "\n";
 		echo '<input type="submit" value="Precedente" Name="Nav">';
 		echo '<input type="submit" value="Prossimo" Name="Nav">';
 		}
-	echo '</form>';
+	echo "</form>\n";
 	
 }
 

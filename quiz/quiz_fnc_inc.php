@@ -57,11 +57,34 @@ function cmd_inizialize_quiz($quiz_name) {
 			// Add item to $data_quiz
 			$data_quiz[$question_id] = $single_quiz;
 			shuffle($all_possible_answer);
-			$data_quiz[$question_id]["possible_answer"]=array_slice($all_possible_answer,0,$_SESSION['Num_options']) ;
-			if (!in_array($data_quiz[$question_id]["correct_answer"],$data_quiz[$question_id]["possible_answer"])) {
-				$data_quiz[$question_id]["possible_answer"][0]=$data_quiz[$question_id]["correct_answer"];
-				shuffle($data_quiz[$question_id]["possible_answer"]);
+			
+			// add correct answer to $possible_answer
+			$possible_answer = array($data_quiz[$question_id]["correct_answer"]);
+			
+			//  add wrong answer to $possible_answer from input data
+			if (isset($data_quiz[$question_id]["wrong_answer"])) {
+				$possible_wrong_answer = explode('|', $data_quiz[$question_id]["wrong_answer"]);
+				$possible_answer = array_merge($possible_answer,$possible_wrong_answer);
 			}
+			
+			//  add random wrong answer to $possible_answer
+			$possible_answer = array_merge($possible_answer,$all_possible_answer);
+			
+			// eliminate duplicates
+			$possible_answer = array_unique($possible_answer);
+			
+			//remove eventually emtpy element
+			$possible_answer = array_filter($possible_answer);
+			
+			//get only the correct number of elements:
+			$possible_answer = array_slice($possible_answer,0,$_SESSION['Num_options']) ;
+			
+			// shuffle all data:
+			shuffle($possible_answer);
+			
+			// Store all in the $data_quiz 
+			$data_quiz[$question_id]["possible_answer"]= $possible_answer;
+			
 		$question_id ++;
 		}
 	}
