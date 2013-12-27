@@ -50,7 +50,9 @@ function cmd_inizialize_quiz($quiz_name) {
 	
 	// insert data from csv to $data_quiz
 	$question_id = 0;
-	
+
+
+	echo "<hr><pre>";print_r($data_quiz_src);echo "</pre>";
 	foreach ($data_quiz_src as $single_quiz) {
 		$difficult_level = isset($single_quiz[difficult_level]) ? $single_quiz[difficult_level] : 0 ;
 		if (($difficult_level >= $_SESSION['min_diffucult_level']) && ($difficult_level <= $_SESSION['max_diffucult_level'])) {
@@ -85,13 +87,14 @@ function cmd_inizialize_quiz($quiz_name) {
 			// Store all in the $data_quiz 
 			$data_quiz[$question_id]["possible_answer"]= $possible_answer;
 			
-		$question_id ++;
+			
+			$question_id ++;
 		}
 	}
 		
 	$_SESSION['data_quiz'] = array_slice($data_quiz,0,$_SESSION['Num_question_total']);
-	//echo "<pre>";print_r($_SESSION);echo "</pre>";
-	
+	echo "<pre>";print_r($_SESSION);echo "</pre>";
+
 	// return $data_quiz;
 }
 

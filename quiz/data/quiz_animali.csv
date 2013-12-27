@@ -1,21 +1,27 @@
 question;correct_answer;difficult_level;wrong_answer
-<img src="http://abbeyvsaustralia.watermilk.com/wp-content/uploads/2010/12/harbour-seal-wikipedia.jpg" height="213" width="320" />;Foca;1;Otaria|Pinguino
-<img src="http://4.bp.blogspot.com/_ZpJw_QVOtZo/TU1BxaITl3I/AAAAAAAABeI/OO56s15s6CU/s1600/cinciallegra.jpg" height="213" width="320" />;Cinciallegra;1;Pettirosso
-<img src="http://digilander.libero.it/scuolaacolori/intercultura/materiali/img/leone.jpg" height="213" width="320" />;Leone;1
-<img src="http://2.bp.blogspot.com/-6kYrjoQfYXI/TaHQQdrdTxI/AAAAAAAAAx0/oxBYJyHkUcA/s1600/La+Tigre+che+batte+i+Mastini+della+Maraotto.jpg" height="213" width="320" />;Tigre;1;
-<img src="http://upload.wikimedia.org/wikipedia/commons/e/eb/Steinadler_Aquila_chrysaetos_closeup2_Richard_Bartz.jpg" height="213" width="320" />;Aquila Reale;1;Aquila Marina Testa Bianca
-<img src="http://upload.wikimedia.org/wikipedia/commons/d/d4/Weisskopf_Seeadler_haliaeetus_leucocephalus_8_amk.jpg" height="213" width="320" />;Acquila Marina Testa Bianca;1;Aquila Reale
-<img src="http://upload.wikimedia.org/wikipedia/commons/2/25/M%C3%A4hnenrobbe_%28Otaria_byronia%29.JPG" height="213" width="320" />;Otaria;1;Foca
-<img src="http://www.pethotels.it/blog/wp-content/uploads/2010/01/elefante.jpg" height="213" width="320" />;Elefante Africano;1;Elefanto Indiano
-<img src="http://upload.wikimedia.org/wikipedia/commons/a/ac/IndianElephant.jpg" height="213" width="320" />;Elefante Indiano;1;Elefante Africano
-<img src="http://vroum52.com/vroumanimaux.img/suricat%5B1%5D.jpg" height="213" width="320" />;Suricato;1;Castoro
-<img src="http://www.liceotorricelli.it/TorricelliWeb/premiati2010_file/Uomonatura/pagine%20web/images/castoro%201.jpg" height="213" width="320" />;Castoro;1;Suricato
-<img src="http://www.marotochi.it/immagini/sfondi/coccinella%203.jpg" height="213" width="320" />;Cocinella;1;
-<img src="http://www.nationalgeographic.it/images/2010/04/27/111002713--fe4bc800-9a23-4def-90a7-9b9e36f62dc0.jpg" height="213" width="320" />;Orintorinco;1;
-<img src="http://static1.wikia.nocookie.net/__cb20121005120417/animali/it/images/f/f7/Giraffa.jpg" height="213" width="320" />;Giraffa;1;
-<img src="https://wikiperbambini.wikispaces.com/file/view/canguro.jpg/423869328/388x458/canguro.jpg" height="213" width="320" />;Canguro;1;Wallaby
-<img src="http://upload.wikimedia.org/wikipedia/commons/7/74/Red_necked_wallaby444.jpg" height="213" width="320" />;Wallaby;1;Canguro
-<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Domestic_Goose.jpg/220px-Domestic_Goose.jpg" height="213" width="320" />;Oca;1;Anatra
-<img src="http://upload.wikimedia.org/wikipedia/commons/a/a1/Mallard2.jpg" height="213" width="320" />;Anatra;1;Oca
-<img src="http://upload.wikimedia.org/wikipedia/commons/7/7b/Donkey_1_arp_750px.jpg" height="213" width="320" />;Asino;1;Cavallo
-<img src="http://www.agricoladream.it/upload/galleria/cavallo1.jpg" height="213" width="320" />;Cavallo;1;Asino
+<img src="http://abbeyvsaustralia.watermilk.com/wp-content/uploads/2010/12/harbour-seal-wikipedia.jpg" height="300" width="400" />;Foca;1;Otaria|Pinguino
+<img src="http://4.bp.blogspot.com/_ZpJw_QVOtZo/TU1BxaITl3I/AAAAAAAABeI/OO56s15s6CU/s1600/cinciallegra.jpg" height="300" width="400" />;Cinciallegra;1;Pettirosso
+<img src="http://digilander.libero.it/scuolaacolori/intercultura/materiali/img/leone.jpg" height="300" width="400" />;Leone;1
+<img src="http://2.bp.blogspot.com/-6kYrjoQfYXI/TaHQQdrdTxI/AAAAAAAAAx0/oxBYJyHkUcA/s1600/La+Tigre+che+batte+i+Mastini+della+Maraotto.jpg" height="300" width="400" />;Tigre;1;
+<img src="http://upload.wikimedia.org/wikipedia/commons/e/eb/Steinadler_Aquila_chrysaetos_closeup2_Richard_Bartz.jpg" height="300" width="400" />;Aquila Reale;1;Aquila Marina Testa Bianca
+<img src="http://upload.wikimedia.org/wikipedia/commons/d/d4/Weisskopf_Seeadler_haliaeetus_leucocephalus_8_amk.jpg" height="300" width="400" />;Acquila Marina Testa Bianca;1;Aquila Reale
+<img src="http://upload.wikimedia.org/wikipedia/commons/2/25/M%C3%A4hnenrobbe_%28Otaria_byronia%29.JPG" height="300" width="400" />;Otaria;1;Foca
+<img src="http://www.pethotels.it/blog/wp-content/uploads/2010/01/elefante.jpg" height="300" width="400" />;Elefante Africano;1;Elefanto Indiano
+<img src="http://upload.wikimedia.org/wikipedia/commons/a/ac/IndianElephant.jpg" height="300" width="400" />;Elefante Indiano;1;Elefante Africano
+<img src="http://vroum52.com/vroumanimaux.img/suricat%5B1%5D.jpg" height="300" width="400" />;Suricato;1;Castoro
+<img src="http://www.liceotorricelli.it/TorricelliWeb/premiati2010_file/Uomonatura/pagine%20web/images/castoro%201.jpg" height="300" width="400" />;Castoro;1;Suricato
+<img src="http://www.marotochi.it/immagini/sfondi/coccinella%203.jpg" height="300" width="400" />;Cocinella;1;
+<img src="http://www.nationalgeographic.it/images/2010/04/27/111002713--fe4bc800-9a23-4def-90a7-9b9e36f62dc0.jpg" height="300" width="400" />;Orintorinco;1;
+<img src="http://static1.wikia.nocookie.net/__cb20121005120417/animali/it/images/f/f7/Giraffa.jpg" height="300" width="400" />;Giraffa;1;
+<img src="https://wikiperbambini.wikispaces.com/file/view/canguro.jpg/423869328/388x458/canguro.jpg" height="300" width="400" />;Canguro;1;Wallaby
+<img src="http://upload.wikimedia.org/wikipedia/commons/7/74/Red_necked_wallaby444.jpg" height="300" width="400" />;Wallaby;1;Canguro
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Domestic_Goose.jpg/220px-Domestic_Goose.jpg" height="300" width="400" />;Oca;1;Anatra
+<img src="http://upload.wikimedia.org/wikipedia/commons/a/a1/Mallard2.jpg" height="300" width="400" />;Anatra;1;Oca
+<img src="http://upload.wikimedia.org/wikipedia/commons/7/7b/Donkey_1_arp_750px.jpg" height="300" width="400" />;Asino;1;Cavallo
+<img src="http://www.agricoladream.it/upload/galleria/cavallo1.jpg" height="300" width="400" />;Cavallo;1;Asino
+<img src="http://upload.wikimedia.org/wikipedia/it/7/72/Pettirosso_Inverno.jpg;" height="300" width="400" />;Pettirosso;1;Cinciallegra
+<img src="http://upload.wikimedia.org/wikipedia/it/1/18/Merlo.JPEG" height="300" width="400" />;Merlo;1;Cornacchia|Corvo
+<img src="http://img.facileblog.it/6/2010/09/cornacchia-grigia-da-wikipedia.jpg" height="300" width="400" />;Cornacchia;1;Merlo|Corvo
+<img src="http://upload.wikimedia.org/wikipedia/commons/b/be/Corvus_corax_%28FWS%29.jpg" height="300" width="400" />;Corvo;1;Cornacchia|Merlo
+<img src="http://www.icponte.it/ipertesti/sentiero/images/poiana.jpg" height="300" width="400" />;Poiana;1;Aquila Reale
+<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Lynx_lynx_poing.jpg/399px-Lynx_lynx_poing.jpg" height="300" width="400" />;Lince;1;Gatto
