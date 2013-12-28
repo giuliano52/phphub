@@ -1,20 +1,35 @@
-question;correct_answer;difficult_level
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Greece.svg" height="213" width="320" />;Grecia;1
-<img src="https://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_the_Netherlands.svg" height="213" width="320" />;Olanda;1
-<img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg" height="213" width="320" />;Francia;1
-<img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_Austria.svg" height="213" width="320" />;Austria;1
-<img src="https://upload.wikimedia.org/wikipedia/commons/0/03/Flag_of_Italy.svg" height="213" width="320" />;Italia;1
-<img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Iceland.svg" height="213" width="320" />;Islanda;2
-<img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Flag_of_the_United_Kingdom.svg" height="213" width="320" />;Regno unito;1
-<img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg" height="213" width="320" />;Spagna;1
-<img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" height="213" width="320" />;Stati Uniti;1
-<img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Switzerland.svg" height="213" width="320" />;Svizzera;1
-<img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/Flag_of_Croatia.svg" height="213" width="320" />;Croazia;1
-<img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Finland.svg" height="213" width="320" />;Finlandia;2
-<img src="https://upload.wikimedia.org/wikipedia/commons/f/f0/Flag_of_Slovenia.svg" height="213" width="320" />;Slovenia;1
-<img src="https://upload.wikimedia.org/wikipedia/commons/4/4c/Flag_of_Sweden.svg" height="213" width="320" />;Svezia;1
-<img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg" height="213" width="320" />;Russia;1
-<img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg" height="213" width="320" />;Portogallo;1
-<img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg" height="213" width="320" />;Germania;1
-<img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Norway.svg" height="213" width="320" />;Norvegia;2
-<img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg" height="213" width="320" />;Brasile;1
+question;correct_answer;difficult_level;wrong_answer;img_url
+"<img src=""https://upload.wikimedia.org/wikipedia/commons/3/36/Flag_of_Albania.svg"" height=""300"" />";Albania;1;;https://upload.wikimedia.org/wikipedia/commons/3/36/Flag_of_Albania.svg
+"<img src=""https://upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_Algeria.svg"" height=""300"" />";Algeria;1;;https://upload.wikimedia.org/wikipedia/commons/7/77/Flag_of_Algeria.svg
+"<img src=""https://upload.wikimedia.org/wikipedia/commons/b/b9/Flag_of_Australia.svg"" height=""300"" />";Australia;1;;https://upload.wikimedia.org/wikipedia/commons/b/b9/Flag_of_Australia.svg
+"<img src=""https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_Austria.svg"" height=""213"" width=""320"" />";Austria;1;;
+"<img src=""https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg"" height=""300"" />";Brasile;1;;https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg
+"<img src=""https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Canada.svg"" height=""300"" />";Canada;1;;https://upload.wikimedia.org/wikipedia/commons/c/cf/Flag_of_Canada.svg
+"<img src=""https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg"" height=""300"" />";Cina;1;;https://upload.wikimedia.org/wikipedia/commons/f/fa/Flag_of_the_People%27s_Republic_of_China.svg
+"<img src=""https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Cyprus.svg"" height=""300"" />";Cipro;1;;https://upload.wikimedia.org/wikipedia/commons/d/d4/Flag_of_Cyprus.svg
+"<img src=""https://upload.wikimedia.org/wikipedia/commons/1/1b/Flag_of_Croatia.svg"" height=""213"" width=""320"" />";Croazia;1;;
+"<img src=""https://upload.wikimedia.org/wikipedia/commons/9/9c/Flag_of_Denmark.svg"" height=""300"" />";Danimarca;1;;https://upload.wikimedia.org/wikipedia/commons/9/9c/Flag_of_Denmark.svg
+"<img src=""https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Finland.svg"" height=""300"" />";Finlandia;2;;https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Finland.svg
+"<img src=""https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg"" height=""300"" />";Francia;1;;https://upload.wikimedia.org/wikipedia/commons/c/c3/Flag_of_France.svg
+"<img src=""https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg"" height=""300"" />";Germania;1;;https://upload.wikimedia.org/wikipedia/commons/b/ba/Flag_of_Germany.svg
+"<img src=""https://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Japan.svg"" height=""300"" />";Giappone;1;;https://upload.wikimedia.org/wikipedia/commons/9/9e/Flag_of_Japan.svg
+"<img src=""https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Greece.svg"" height=""300"" />";Grecia;1;;https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Greece.svg
+"<img src=""https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_India.svg"" height=""300"" />";India;2;;https://upload.wikimedia.org/wikipedia/commons/4/41/Flag_of_India.svg
+"<img src=""https://upload.wikimedia.org/wikipedia/commons/a/ae/Flag_of_the_United_Kingdom.svg"" height=""300"" />";Inghilterra / regno unito;1;;https://upload.wikimedia.org/wikipedia/commons/a/ae/Flag_of_the_United_Kingdom.svg
+"<img src=""https://upload.wikimedia.org/wikipedia/commons/4/45/Flag_of_Ireland.svg"" height=""300"" />";Irlanda;1;;https://upload.wikimedia.org/wikipedia/commons/4/45/Flag_of_Ireland.svg
+"<img src=""https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Iceland.svg"" height=""213"" width=""320"" />";Islanda;2;;
+"<img src=""https://upload.wikimedia.org/wikipedia/commons/0/03/Flag_of_Italy.svg"" height=""300"" />";Italia;1;;https://upload.wikimedia.org/wikipedia/commons/0/03/Flag_of_Italy.svg
+"<img src=""https://upload.wikimedia.org/wikipedia/commons/d/d9/Flag_of_Norway.svg"" height=""213"" width=""320"" />";Norvegia;2;;
+"<img src=""https://upload.wikimedia.org/wikipedia/commons/2/20/Flag_of_the_Netherlands.svg"" height=""213"" width=""320"" />";Olanda;1;;
+"<img src=""https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Portugal.svg"" height=""213"" width=""320"" />";Portogallo;1;;
+"<img src=""https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_Czech_Republic.svg"" height=""300"" />";Repubblica Ceca;1;;https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_Czech_Republic.svg
+"<img src=""https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg"" height=""213"" width=""320"" />";Russia;1;;
+"<img src=""https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg"" height=""300"" />";Russia;2;;https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg
+"<img src=""https://upload.wikimedia.org/wikipedia/commons/f/f0/Flag_of_Slovenia.svg"" height=""213"" width=""320"" />";Slovenia;1;;
+"<img src=""https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg"" height=""213"" width=""320"" />";Spagna;1;;
+"<img src=""https://upload.wikimedia.org/wikipedia/commons/e/e2/Flag_of_the_United_States_%28Pantone%29.svg"" height=""300"" />";Stati Uniti / USA;1;;https://upload.wikimedia.org/wikipedia/commons/e/e2/Flag_of_the_United_States_%28Pantone%29.svg
+"<img src=""https://upload.wikimedia.org/wikipedia/commons/4/4c/Flag_of_Sweden.svg"" height=""213"" width=""320"" />";Svezia;1;;
+"<img src=""https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Switzerland.svg"" height=""300"" />";Svizzera;1;;https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Switzerland.svg
+"<img src=""https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Tunisia.svg"" height=""300"" />";Tunisia;2;;https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Tunisia.svg
+"<img src=""https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg"" height=""300"" />";Turchia;2;;https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg
+"<img src=""https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Uruguay.svg"" height=""300"" />";Uruguay;3;;https://upload.wikimedia.org/wikipedia/commons/f/fe/Flag_of_Uruguay.svg
