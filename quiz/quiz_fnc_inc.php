@@ -36,6 +36,7 @@ function test_input($data) {
 function cmd_inizialize_quiz($quiz_name) {
 
 	$data_quiz_src=csv_to_array($quiz_name);
+	//echo "<hr><pre>";print_r($data_quiz_src);echo "</pre>";
 	shuffle($data_quiz_src);
 	$all_possible_answer = array_column_1($data_quiz_src,"correct_answer");
 	$data_quiz = array();
@@ -52,7 +53,7 @@ function cmd_inizialize_quiz($quiz_name) {
 	$question_id = 0;
 
 
-	//echo "<hr><pre>";print_r($data_quiz_src);echo "</pre>";
+
 	foreach ($data_quiz_src as $single_quiz) {
 		$difficult_level = isset($single_quiz[difficult_level]) ? $single_quiz[difficult_level] : 0 ;
 		if (($difficult_level >= $_SESSION['min_diffucult_level']) && ($difficult_level <= $_SESSION['max_diffucult_level'])) {

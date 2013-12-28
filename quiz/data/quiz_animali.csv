@@ -1,27 +1,40 @@
-question;correct_answer;difficult_level;wrong_answer
-<img src="http://abbeyvsaustralia.watermilk.com/wp-content/uploads/2010/12/harbour-seal-wikipedia.jpg" height="300" width="400" />;Foca;1;Otaria|Pinguino
-<img src="http://4.bp.blogspot.com/_ZpJw_QVOtZo/TU1BxaITl3I/AAAAAAAABeI/OO56s15s6CU/s1600/cinciallegra.jpg" height="300" width="400" />;Cinciallegra;1;Pettirosso
-<img src="http://digilander.libero.it/scuolaacolori/intercultura/materiali/img/leone.jpg" height="300" width="400" />;Leone;1
-<img src="http://2.bp.blogspot.com/-6kYrjoQfYXI/TaHQQdrdTxI/AAAAAAAAAx0/oxBYJyHkUcA/s1600/La+Tigre+che+batte+i+Mastini+della+Maraotto.jpg" height="300" width="400" />;Tigre;1;
-<img src="http://upload.wikimedia.org/wikipedia/commons/e/eb/Steinadler_Aquila_chrysaetos_closeup2_Richard_Bartz.jpg" height="300" width="400" />;Aquila Reale;1;Aquila Marina Testa Bianca
-<img src="http://upload.wikimedia.org/wikipedia/commons/d/d4/Weisskopf_Seeadler_haliaeetus_leucocephalus_8_amk.jpg" height="300" width="400" />;Acquila Marina Testa Bianca;1;Aquila Reale
-<img src="http://upload.wikimedia.org/wikipedia/commons/2/25/M%C3%A4hnenrobbe_%28Otaria_byronia%29.JPG" height="300" width="400" />;Otaria;1;Foca
-<img src="http://www.pethotels.it/blog/wp-content/uploads/2010/01/elefante.jpg" height="300" width="400" />;Elefante Africano;1;Elefanto Indiano
-<img src="http://upload.wikimedia.org/wikipedia/commons/a/ac/IndianElephant.jpg" height="300" width="400" />;Elefante Indiano;1;Elefante Africano
-<img src="http://vroum52.com/vroumanimaux.img/suricat%5B1%5D.jpg" height="300" width="400" />;Suricato;1;Castoro
-<img src="http://www.liceotorricelli.it/TorricelliWeb/premiati2010_file/Uomonatura/pagine%20web/images/castoro%201.jpg" height="300" width="400" />;Castoro;1;Suricato
-<img src="http://www.marotochi.it/immagini/sfondi/coccinella%203.jpg" height="300" width="400" />;Cocinella;1;
-<img src="http://www.nationalgeographic.it/images/2010/04/27/111002713--fe4bc800-9a23-4def-90a7-9b9e36f62dc0.jpg" height="300" width="400" />;Ornitorinco;1;
-<img src="http://static1.wikia.nocookie.net/__cb20121005120417/animali/it/images/f/f7/Giraffa.jpg" height="300" width="400" />;Giraffa;1;
-<img src="https://wikiperbambini.wikispaces.com/file/view/canguro.jpg/423869328/388x458/canguro.jpg" height="300" width="400" />;Canguro;1;Wallaby
-<img src="http://upload.wikimedia.org/wikipedia/commons/7/74/Red_necked_wallaby444.jpg" height="300" width="400" />;Wallaby;1;Canguro
-<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Domestic_Goose.jpg/220px-Domestic_Goose.jpg" height="300" width="400" />;Oca;1;Anatra
-<img src="http://upload.wikimedia.org/wikipedia/commons/a/a1/Mallard2.jpg" height="300" width="400" />;Anatra;1;Oca
-<img src="http://upload.wikimedia.org/wikipedia/commons/7/7b/Donkey_1_arp_750px.jpg" height="300" width="400" />;Asino;1;Cavallo
-<img src="http://www.agricoladream.it/upload/galleria/cavallo1.jpg" height="300" width="400" />;Cavallo;1;Asino
-<img src="http://upload.wikimedia.org/wikipedia/it/7/72/Pettirosso_Inverno.jpg;" height="300" width="400" />;Pettirosso;1;Cinciallegra
-<img src="http://upload.wikimedia.org/wikipedia/it/1/18/Merlo.JPEG" height="300" width="400" />;Merlo;1;Cornacchia|Corvo
-<img src="http://img.facileblog.it/6/2010/09/cornacchia-grigia-da-wikipedia.jpg" height="300" width="400" />;Cornacchia;1;Merlo|Corvo
-<img src="http://upload.wikimedia.org/wikipedia/commons/b/be/Corvus_corax_%28FWS%29.jpg" height="300" width="400" />;Corvo;1;Cornacchia|Merlo
-<img src="http://www.icponte.it/ipertesti/sentiero/images/poiana.jpg" height="300" width="400" />;Poiana;1;Aquila Reale
-<img src="http://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Lynx_lynx_poing.jpg/399px-Lynx_lynx_poing.jpg" height="300" width="400" />;Lince;1;Gatto
+question;correct_answer;difficult_level;wrong_answer;img_url
+"<img src=""http://digilander.libero.it/scuolaacolori/intercultura/materiali/img/leone.jpg"" height=""300"" />";Leone;1;Tigre;
+"<img src=""http://abbeyvsaustralia.watermilk.com/wp-content/uploads/2010/12/harbour-seal-wikipedia.jpg"" height=""300"" />";Foca;1;Otaria|Pinguino;
+"<img src=""http://4.bp.blogspot.com/_ZpJw_QVOtZo/TU1BxaITl3I/AAAAAAAABeI/OO56s15s6CU/s1600/cinciallegra.jpg"" height=""300"" />";Cinciallegra;1;Pettirosso;
+"<img src=""http://2.bp.blogspot.com/-6kYrjoQfYXI/TaHQQdrdTxI/AAAAAAAAAx0/oxBYJyHkUcA/s1600/La+Tigre+che+batte+i+Mastini+della+Maraotto.jpg"" height=""300"" />";Tigre;1;;
+"<img src=""http://upload.wikimedia.org/wikipedia/commons/e/eb/Steinadler_Aquila_chrysaetos_closeup2_Richard_Bartz.jpg"" height=""300"" />";Aquila Reale;1;Aquila Marina Testa Bianca;
+"<img src=""http://upload.wikimedia.org/wikipedia/commons/d/d4/Weisskopf_Seeadler_haliaeetus_leucocephalus_8_amk.jpg"" height=""300"" />";Acquila Marina Testa Bianca;1;Aquila Reale;
+"<img src=""http://upload.wikimedia.org/wikipedia/commons/2/25/M%C3%A4hnenrobbe_%28Otaria_byronia%29.JPG"" height=""300"" />";Otaria;1;Foca;
+"<img src=""http://www.pethotels.it/blog/wp-content/uploads/2010/01/elefante.jpg"" height=""300"" />";Elefante Africano;1;Elefanto Indiano;
+"<img src=""http://upload.wikimedia.org/wikipedia/commons/a/ac/IndianElephant.jpg"" height=""300"" />";Elefante Indiano;1;Elefante Africano;
+"<img src=""http://vroum52.com/vroumanimaux.img/suricat%5B1%5D.jpg"" height=""300"" />";Suricato;1;Castoro;
+"<img src=""http://www.liceotorricelli.it/TorricelliWeb/premiati2010_file/Uomonatura/pagine%20web/images/castoro%201.jpg"" height=""300"" />";Castoro;1;Suricato;
+"<img src=""http://www.marotochi.it/immagini/sfondi/coccinella%203.jpg"" height=""300"" />";Cocinella;1;;
+"<img src=""http://www.nationalgeographic.it/images/2010/04/27/111002713--fe4bc800-9a23-4def-90a7-9b9e36f62dc0.jpg"" height=""300"" />";Ornitorinco;1;;
+"<img src=""http://static1.wikia.nocookie.net/__cb20121005120417/animali/it/images/f/f7/Giraffa.jpg"" height=""300"" />";Giraffa;1;;
+"<img src=""https://wikiperbambini.wikispaces.com/file/view/canguro.jpg/423869328/388x458/canguro.jpg"" height=""300"" />";Canguro;1;Wallaby;
+"<img src=""http://upload.wikimedia.org/wikipedia/commons/7/74/Red_necked_wallaby444.jpg"" height=""300"" />";Wallaby;1;Canguro;
+"<img src=""http://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Domestic_Goose.jpg/220px-Domestic_Goose.jpg"" height=""300"" />";Oca;1;Anatra;
+"<img src=""http://upload.wikimedia.org/wikipedia/commons/a/a1/Mallard2.jpg"" height=""300"" />";Anatra;1;Oca;
+"<img src=""http://upload.wikimedia.org/wikipedia/commons/7/7b/Donkey_1_arp_750px.jpg"" height=""300"" />";Asino;1;Cavallo;
+"<img src=""http://www.agricoladream.it/upload/galleria/cavallo1.jpg"" height=""300"" />";Cavallo;1;Asino;
+"<img src=""http://upload.wikimedia.org/wikipedia/it/7/72/Pettirosso_Inverno.jpg"" height=""300"" />";Pettirosso;1;Cinciallegra;
+"<img src=""http://upload.wikimedia.org/wikipedia/it/1/18/Merlo.JPEG"" height=""300"" />";Merlo;1;Cornacchia|Corvo;
+"<img src=""http://img.facileblog.it/6/2010/09/cornacchia-grigia-da-wikipedia.jpg"" height=""300"" />";Cornacchia;1;Merlo|Corvo;
+"<img src=""http://upload.wikimedia.org/wikipedia/commons/b/be/Corvus_corax_%28FWS%29.jpg"" height=""300"" />";Corvo;1;Cornacchia|Merlo;
+"<img src=""http://www.icponte.it/ipertesti/sentiero/images/poiana.jpg"" height=""300"" />";Poiana;1;Aquila Reale;
+"<img src=""http://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Lynx_lynx_poing.jpg/399px-Lynx_lynx_poing.jpg"" height=""300"" />";Lince;1;Gatto;
+"<img src=""http://www.ogliosud.net/assets/0000/0770/lucertola_high.jpg?1293116016"" height=""300"" />";Lucertola;1;;http://www.ogliosud.net/assets/0000/0770/lucertola_high.jpg?1293116016
+"<img src=""http://upload.wikimedia.org/wikipedia/it/b/b6/Ettore_cane_.jpg"" height=""300"" />";Cane;1;Lupo;http://upload.wikimedia.org/wikipedia/it/b/b6/Ettore_cane_.jpg
+"<img src=""http://upload.wikimedia.org/wikipedia/commons/2/23/Canis_lupus.jpg"" height=""300"" />";Lupo;1;;http://upload.wikimedia.org/wikipedia/commons/2/23/Canis_lupus.jpg
+"<img src=""http://nonsolopolpette.files.wordpress.com/2012/06/alce.jpg"" height=""300"" />";Alce;1;Cervo;http://nonsolopolpette.files.wordpress.com/2012/06/alce.jpg
+"<img src=""http://upload.wikimedia.org/wikipedia/commons/5/50/Red_deer_stag_2009_denmark.jpg"" height=""300"" />";Cervo;1;Alce;http://upload.wikimedia.org/wikipedia/commons/5/50/Red_deer_stag_2009_denmark.jpg
+"<img src=""http://fotografia.deagostinipassion.com/resources/photos/k/kd/Antilope.jpg"" height=""300"" />";Antilope;1;;http://fotografia.deagostinipassion.com/resources/photos/k/kd/Antilope.jpg
+"<img src=""http://www.boorp.com/sfondi_gratis_desktop_pc/sfondi_gratis/sfondi_animali_cuccioli/scimpanze%27.jpg"" height=""300"" />";Scimpanze';1;Gorilla|Orango;http://www.boorp.com/sfondi_gratis_desktop_pc/sfondi_gratis/sfondi_animali_cuccioli/scimpanze%27.jpg
+"<img src=""http://upload.wikimedia.org/wikipedia/commons/b/b1/Eyes_of_gorilla.jpg"" height=""300"" />";Gorilla;1;Scimpanze'|Orango;http://upload.wikimedia.org/wikipedia/commons/b/b1/Eyes_of_gorilla.jpg
+"<img src=""http://static.turistipercaso.it/image/s/singapore/singapore_2f6w3.T0.jpg"" height=""300"" />";Orango;1;Gorilla|Scimpanze';http://static.turistipercaso.it/image/s/singapore/singapore_2f6w3.T0.jpg
+"<img src=""http://petforce1.com/sites/default/files/800px-Caretta_caretta_060417w2_0.jpg"" height=""300"" />";Tartaruga Marina;1;Tartaruga Terrestre;http://petforce1.com/sites/default/files/800px-Caretta_caretta_060417w2_0.jpg
+"<img src=""http://upload.wikimedia.org/wikipedia/commons/6/6c/Testudo_hermanni_hermanni_Mallorca_02.jpg"" height=""300"" />";Tartaruga Terrestre;1;Tartaruga marina;http://upload.wikimedia.org/wikipedia/commons/6/6c/Testudo_hermanni_hermanni_Mallorca_02.jpg
+"<img src=""http://1.bp.blogspot.com/_5tiPFPxLfAo/S82P16j-QjI/AAAAAAAAA0s/nit6fIY_G_4/s1600/fiori+e+vespa+046.jpg"" height=""300"" />";Vespa;1;Ape;http://1.bp.blogspot.com/_5tiPFPxLfAo/S82P16j-QjI/AAAAAAAAA0s/nit6fIY_G_4/s1600/fiori+e+vespa+046.jpg
+"<img src=""http://d35obg07bzmh9h.cloudfront.net/wp-content/uploads/2010/08/puntura-di-ape-bambini.jpg"" height=""300"" />";Ape;1;Vespa;http://d35obg07bzmh9h.cloudfront.net/wp-content/uploads/2010/08/puntura-di-ape-bambini.jpg

@@ -6,7 +6,7 @@
  *
  */
 
-require_once('conf/conf.php');
+require_once('conf.php');
 require_once('quiz_emit_inc.php');
 require_once('quiz_fnc_inc.php');
 error_reporting(E_ALL);
@@ -49,5 +49,10 @@ switch($cmd) {
 }
 
 emit_footer();
+
+if($debug == TRUE) {
+	echo "<pre>";print_r($_SESSION); echo "</pre>";
+
+}
  
 ?>

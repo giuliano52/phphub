@@ -9,23 +9,56 @@
 function emit_question($single_quiz_data,$question_index) {
 	$answer = isset($single_quiz_data[answered_question]) ? $single_quiz_data[answered_question] : "";
 	echo "<tr><td>\n";
-	echo $question_index;
+	echo emit_question_status($question_index);
 	echo "</td>\n";
 	echo "<td>\n";
 	echo $single_quiz_data["question"];
-	echo "</td>\n<td>";
+	echo "</td>\n";
+	echo "<td class=\"possible_answer\">\n";
 	
 	foreach ($single_quiz_data['possible_answer'] as $possible_answer) {
 		$checked = ($answer == $possible_answer) ? " checked " : "";
+		echo "\t";
 		echo '<input type="radio" name="q_'.$question_index.'" value="'.$possible_answer.'" '.$checked.'>';
 		echo $possible_answer;
 		echo "<br>\n"; 
 		}
-	echo "</td></tr>";
+	echo "</td></tr>\n";
+}
+
+function emit_question_status($question_index) {
+	// mostra le domande a cui si è risposto e quelle che mancano
+	$content = "<table>\n";
+	
+	foreach  ($_SESSION[data_quiz] as $id=>$single_question) {
+		if ($id == $question_index) {
+			$extra_stle = "outline: thin solid black;";
+		}
+		else {
+			$extra_stle = "";
+		}
+		$content .= "<tr style=\"$extra_stle\" class=\"question_status\">\n";
+		$content .= "\t<td><a href=\"?starting_question=$id\">".$id."</a></td>";
+		$content .= "<td><a href=\"?starting_question=$id\">";
+		if (isset($single_question[answered_question])) {
+			$content .= '<img src="img/Circle-question-green.svg" height="30" />';	
+		}
+		else {
+		
+			$content .= '<img src="img/Circle-question-yellow.svg" height="30" />';	
+		}
+		
+		$content .= "</a></td><tr>\n";
+	}
+	
+	$content .= "</table>\n";
+	return $content;
+
 }
 
 function emit_header() {
 echo '<html>
+<link rel="stylesheet" type="text/css" href="quiz.css">
 <body>
 ';
 }
@@ -80,7 +113,7 @@ function emit_result() {
 		}
 	}
 	echo '<table border="1">';
-	echo '<tr><td>';
+	echo '<tr ><td>';
 	echo '<table border="1">';
 	for($question_index = 0; $question_index < $num_question; ++$question_index) {
 		$answer  = $data_quiz[$question_index]["answered_question"];
@@ -105,12 +138,13 @@ function emit_result() {
 		echo '</tr>';
 	}
 	echo "</table>\n";
-	echo "</td><td>";
+	echo "</td><td style=\"vertical-align:top;\">";
 	echo 'hai risposto giusto '.$num_correct_answer.' su '.$num_question.' domande';
 	if($num_correct_answer == $num_question) {
 		// $img = 'img/congratulation/'.choose_file("img/congratulation/");
 		$img = choose_cvs_entry($_SESSION['congratulation_file']);
-		echo '<br /><img src="'.$img.'">';
+		echo "<br /><img src=\"$img\">\n";
+		//echo "<br />$img\n";
 	}
 	echo "</td></tr>";
 	echo "</table>";

@@ -1,0 +1,17 @@
+body
+{
+	background-color:#d0e4fe;
+}
+.possible_answer {
+	font-size:200%;
+}
+.question_status {
+/*	background-color:red; */
+	font-size:100%;
+	vertical-align:middle;
+}
+.question_status a:link {text-decoration:none;}
+.question_status a:visited {text-decoration:none;}
+.question_status a:hover {text-decoration:underline;}
+.question_status a:active {text-decoration:underline;}
+}
