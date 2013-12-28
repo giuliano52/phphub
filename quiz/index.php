@@ -24,10 +24,6 @@ $starting_question = (int)(isset($_REQUEST['starting_question']) ? test_input($_
 $next_starting_question = $starting_question + $_SESSION['Num_question_per_page'];
 $previous_starting_question = max($starting_question - $_SESSION['Num_question_per_page'],0);
 
-if (isset($_REQUEST['Nav']) && $_REQUEST['Nav'] == "Precedente")
-	$starting_question = $previous_starting_question;
-elseif (isset($_REQUEST['Nav']) && $_REQUEST['Nav'] == "Prossimo")
-	$starting_question = $next_starting_question;
 
 emit_header();
 
@@ -45,7 +41,17 @@ switch($cmd) {
     case "store_answers":
         cmd_store_answers();
     default:
-		cmd_quiz($_SESSION['Quiz_name'],$starting_question);
+	if (isset($_REQUEST['Nav']) && $_REQUEST['Nav'] == "Precedente")
+		$starting_question = $previous_starting_question;
+	elseif (isset($_REQUEST['Nav']) && $_REQUEST['Nav'] == "Prossimo")
+		$starting_question = $next_starting_question;
+	// verifico che lo starting question stia tra 0 e il numero totale di domande
+	if ($starting_question < 0) 
+		$starting_question = 0;
+	if ($starting_question > $_SESSION['Num_question_total']-1) 
+		$starting_question = $_SESSION['Num_question_total']-1;	
+
+	cmd_quiz($_SESSION['Quiz_name'],$starting_question);
 }
 
 emit_footer();
