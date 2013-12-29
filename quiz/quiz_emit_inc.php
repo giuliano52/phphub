@@ -15,14 +15,8 @@ function emit_question($single_quiz_data,$question_index,$tab_index=1) {
 	echo $single_quiz_data["question"];
 	echo "</td>\n";
 	echo "<td class=\"possible_answer\">\n";
-	$free_renponse  = isset($single_quiz_data[free_response]) ? str_to_bool($single_quiz_data['free_response']) : $_SESSION['default_free_renponse'];
-	if ($free_renponse  == True ) {
-		$opt = "tabindex=$tab_index ";
-		if ($tab_index==1)
-			$opt .= "autofocus";
-		echo "<input type=\"text\" name=\"q_$question_index\" value=\"$possible_answer\" $opt >";
-	}
-	else {
+	$response_type  = isset($single_quiz_data['response_type']) ? $single_quiz_data['response_type'] : $_SESSION['default_response_type'];
+	if ($response_type == "options") {
 		// Multiple Options 
 		foreach ($single_quiz_data['possible_answer'] as $possible_answer) {
 			$checked = ($answer == $possible_answer) ? " checked " : "";
@@ -31,7 +25,15 @@ function emit_question($single_quiz_data,$question_index,$tab_index=1) {
 			echo $possible_answer;
 			echo "<br>\n"; 
 		}
+	
 	}
+	else  {
+		$opt = "tabindex=$tab_index ";
+		if ($tab_index==1)
+			$opt .= "autofocus";
+		echo "<input type=\"text\" name=\"q_$question_index\" value=\"$possible_answer\" $opt >";
+	}
+	
 	echo "</td></tr>\n";
 }
 
@@ -98,10 +100,9 @@ function emit_quiz_footer($starting_question,$all_answered) {
 }
 
 function emit_footer() {
-echo '<br /><br /><br />';
+echo '<br /><br />';
 echo '<br /><A href="'.htmlspecialchars($_SERVER["PHP_SELF"]).'?cmd=reset_quiz">RICOMINCIA</A>';
-echo '</body></html>
-';
+echo "\n</body>\n</html>";
 }
 
 function emit_result() {
@@ -140,8 +141,8 @@ function emit_result() {
 		else {
 			// wrong answer
 			echo '<td style="background-color:red;">';
-			echo 'hai risposto :'.$answer.'<br />';
-			echo 'Ma la risposta giusta era:'.$correct_answer.'<br />';
+			echo "Hai risposto : <b>$answer</b><br />";
+			echo "Ma la risposta giusta era: <b>$correct_answer</b><br />";
 			echo "</td>\n";
 		}
 		echo '</tr>';

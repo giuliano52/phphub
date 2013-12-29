@@ -199,17 +199,4 @@ function choose_file($dir) {
 }
  
  
-function str_to_bool($str) {
-// convert a string to a boolean
-	if (trim(strtoupper($str)) == 'TRUE') {
-		$out = true;
-	}
-	elseif (trim(strtoupper($str)) == 'YES') {
-		$out = true;
-	}
-	else {
-		$out = false;
-	}
-	return $out;
-}
 ?>
