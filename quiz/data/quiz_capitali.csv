@@ -1,5 +1,196 @@
-question;correct_answer
-"Francia";"Parigi"
-"Italia";"Roma"
-"Spagna";"Madrid"
-"Regno Unito";"Londra"
+question;correct_answer;wrong_answer;free_response ;difficult_level
+Afghanistan       ;Kabul ;;;2
+Albania       ;Tirana ;;;2
+Algeria       ;Algeri ;;;2
+Andorra       ;Andorra la Vella ;;;2
+Angola       ;Luanda ;;;2
+Antigua e Barbuda     ;Saint John's ;;;2
+Arabia Saudita      ;Riy?d ;;;2
+Argentina       ;Buenos Aires ;;;2
+Armenia       ;Yerevan ;;;2
+Australia       ;Canberra ;;;2
+Austria       ;Vienna ;;;2
+Azerbaigian       ;Baku ;;;2
+Bahamas       ;Nassau ;;;2
+Bahrein       ;Manama ;;;2
+Bangladesh       ;Dhaka ;;;2
+Barbados       ;Bridgetown ;;;2
+Belgio       ;Bruxelles ;;;2
+Belize       ;Belmopan ;;;2
+Benin       ;Porto-Novo ;;;2
+Bhutan       ;Thimphu ;;;2
+Bielorussia       ;Minsk ;;;2
+Birmania       ;Naypyidaw ;;;2
+Bolivia       ;Sucre ;;;2
+Bosnia ed Erzegovina     ;Sarajevo ;;;2
+Botswana       ;Gaborone ;;;2
+Brasile       ;Brasilia ;;;2
+Brunei       ;Bandar Seri Begawan ;;;2
+Bulgaria       ;Sofia ;;;2
+Burkina Faso      ;Ouagadougou ;;;2
+Burundi       ;Bujumbura ;;;2
+Cambogia       ;Phnom Penh ;;;2
+Camerun       ;Yaoundé ;;;2
+Canada       ;Ottawa ;;;2
+Capo Verde      ;Praia ;;;2
+Rep. Ceca      ;Praga ;;;2
+Rep. Centrafricana      ;Bangui ;;;2
+Ciad       ;N'Djamena ;;;2
+Cile       ;Santiago ;;;2
+Cina       ;Pechino ;;;2
+Cipro       ;Nicosia ;;;2
+Colombia       ;Bogotá ;;;2
+Comore       ;Moroni ;;;2
+Rep. del Congo     ;Brazzaville ;;;2
+RD del Congo     ;Kinshasa ;;;2
+Corea del Nord     ;Pyongyang ;;;2
+Corea del Sud     ;Seul ;;;2
+Costa d'Avorio      ;Yamoussoukro ;;;2
+Costa Rica      ;San José ;;;2
+Croazia       ;Zagabria ;;;2
+Cuba       ;L'Avana ;;;2
+Danimarca       ;Copenaghen ;;;2
+Dominica       ;Roseau ;;;2
+Rep. Dominicana      ;Santo Domingo ;;;2
+Ecuador       ;Quito ;;;2
+Egitto       ;Il Cairo ;;;2
+El Salvador      ;San Salvador ;;;2
+Emirati Arabi Uniti     ;Abu Dhabi ;;;2
+Eritrea       ;Asmara ;;;2
+Estonia       ;Tallinn ;;;2
+Etiopia       ;Addis Abeba ;;;2
+Figi       ;Suva ;;;2
+Filippine       ;Manila ;;;2
+Finlandia       ;Helsinki ;;;2
+Francia       ;Parigi ;;;1
+Gabon       ;Libreville ;;;2
+Gambia       ;Banjul ;;;2
+Georgia       ;Tbilisi ;;;2
+Germania       ;Berlino ;;;2
+Ghana       ;Accra ;;;2
+Giamaica       ;Kingston ;;;2
+Giappone       ;Tokyo ;;;2
+Gibuti       ;Gibuti ;;;2
+Giordania       ;Amman ;;;2
+Grecia       ;Atene ;;;2
+Grenada       ;Saint George's ;;;2
+Guatemala       ;Città del Guatemala ;;;2
+Guinea       ;Conakry ;;;2
+Guinea-Bissau       ;Bissau ;;;2
+Guinea Equatoriale      ;Malabo ;;;2
+Guyana       ;Georgetown ;;;2
+Haiti       ;Port-au-Prince ;;;2
+Honduras       ;Tegucigalpa ;;;2
+India       ;Nuova Delhi ;;;2
+Indonesia       ;Giakarta ;;;2
+Iran       ;Teheran ;;;2
+Iraq       ;Baghdad ;;;2
+Irlanda       ;Dublino ;;;2
+Islanda       ;Reykjavík ;;;2
+Isole Marshall      ;Majuro ;;;2
+Israele       ;Gerusalemme;;;2
+Italia       ;Roma ;;;1
+Kazakistan       ;Astana ;;;2
+Kenya       ;Nairobi ;;;2
+Kirghizistan       ;Bishkek ;;;2
+Kiribati       ;Bairiki ;;;2
+Kuwait       ;Madinat al-Kuwait ;;;2
+Laos       ;Vientiane ;;;2
+Lesotho       ;Maseru ;;;2
+Lettonia       ;Riga ;;;2
+Libano       ;Beirut ;;;2
+Liberia       ;Monrovia ;;;2
+Libia       ;Tripoli ;;;2
+Liechtenstein       ;Vaduz ;;;2
+Lituania       ;Vilnius ;;;2
+Lussemburgo       ;Lussemburgo ;;;2
+Macedonia       ;Skopje ;;;2
+Madagascar       ;Antananarivo ;;;2
+Malawi       ;Lilongwe ;;;2
+Malesia       ;Kuala Lumpur ;;;2
+Maldive       ;Malé ;;;2
+Mali       ;Bamako ;;;2
+Malta       ;La Valletta ;;;2
+Marocco       ;Rabat ;;;2
+Mauritania       ;Nouakchott ;;;2
+Mauritius       ;Port Louis ;;;2
+Messico       ;Città del Messico ;;;2
+Micronesia       ;Palikir ;;;2
+Moldavia       ;Chi?in?u ;;;2
+Monaco       ;Monaco (città-stato) ;;;2
+Mongolia       ;Ulan Bator ;;;2
+Montenegro       ;Podgorica ;;;2
+Mozambico       ;Maputo ;;;2
+Namibia       ;Windhoek ;;;2
+Nauru       ;Yaren (sede politica) ;;;2
+Nepal       ;Kathmandu ;;;2
+Nicaragua       ;Managua ;;;2
+Niger       ;Niamey ;;;2
+Nigeria       ;Abuja ;;;2
+Norvegia       ;Oslo ;;;2
+Nuova Zelanda      ;Wellington ;;;2
+Oman       ;Mascate ;;;2
+Paesi Bassi      ;Amsterdam ;;;2
+Pakistan       ;Islamabad ;;;2
+Palau       ;Ngerulmud ;;;2
+Panamá       ;Panamá ;;;2
+Papua Nuova Guinea     ;Port Moresby ;;;2
+Paraguay       ;Asunción ;;;2
+Perù       ;Lima ;;;2
+Polonia       ;Varsavia ;;;2
+Portogallo       ;Lisbona ;;;2
+Qatar       ;Doha ;;;2
+Regno Unito      ;Londra ;;;2
+Romania       ;Bucarest ;;;2
+Ruanda       ;Kigali ;;;2
+Russia       ;Mosca ;;;2
+Saint Kitts e Nevis    ;Basseterre ;;;2
+Saint Vincent e Grenadine    ;Kingstown ;;;2
+Isole Salomone Isole Salomone    ;Honiara ;;;2
+Samoa       ;Apia ;;;2
+San Marino San Marino    ;Città di San Marino ;;;2
+Santa Lucia Santa Lucia    ;Castries ;;;2
+São Tomé e Príncipe    ;São Tomé ;;;2
+Senegal       ;Dakar ;;;2
+Serbia       ;Belgrado ;;;2
+Seychelles       ;Port Victoria ;;;2
+Sierra Leone      ;Freetown ;;;2
+Singapore       ;Singapore ;;;2
+Siria       ;Damasco ;;;2
+Slovacchia       ;Bratislava ;;;2
+Slovenia       ;Lubiana ;;;2
+Somalia       ;Mogadiscio ;;;2
+Spagna       ;Madrid ;;;2
+Sri Lanka      ;Sri Jayewardanapura Kotte ;;;2
+Stati Uniti      ;Washington D.C. ;;;2
+Sudafrica       ;Pretoria amministrativa, Città del Capo legislativa, e Bloemfontein giudiziaria ;;;2
+Sudan       ;Khartum ;;;2
+Sudan del Sud     ;Juba ;;;2
+Suriname       ;Paramaribo ;;;2
+Svezia       ;Stoccolma ;;;2
+Svizzera       ;Berna ;;;2
+Swaziland       ;Mbabane amministrativa e giudiziaria, e Lobamba legislativa ;;;2
+Tagikistan       ;Dushanbe ;;;2
+Taiwan       ;Taipei ;;;2
+Tanzania       ;Dodoma ;;;2
+Thailandia       ;Bangkok ;;;2
+Timor Est      ;Dili ;;;2
+Togo       ;Lomé ;;;2
+Tonga       ;Nuku'alofa ;;;2
+Trinidad e Tobago     ;Port of Spain ;;;2
+Tunisia       ;Tunisi ;;;2
+Turchia       ;Ankara ;;;2
+Turkmenistan       ;Ashgabat ;;;2
+Tuvalu       ;Funafuti ;;;2
+Ucraina       ;Kiev ;;;2
+Uganda       ;Kampala ;;;2
+Ungheria       ;Budapest ;;;2
+Uruguay       ;Montevideo ;;;2
+Uzbekistan       ;Tashkent ;;;2
+Vanuatu       ;Port Vila ;;;2
+Città del Vaticano     ;Città del Vaticano (città-stato) ;;;2
+Venezuela       ;Caracas ;;;2
+Vietnam       ;Hanoi ;;;2
+Yemen       ;San'a ;;;2
+Zambia       ;Lusaka ;;;2
+Zimbabwe       ;Harare ;;;2

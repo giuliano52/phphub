@@ -8,5 +8,4 @@ free_response (optiona) (bool) : if TRUE -> a free response field, if FALSE -> m
 
 TODO
 - export in PDF
-- Possibilità risposta libera
 - possibilità di importare i files per le domande

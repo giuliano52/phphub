@@ -6,7 +6,7 @@
  *
  */
  
-function emit_question($single_quiz_data,$question_index) {
+function emit_question($single_quiz_data,$question_index,$tab_index=1) {
 	$answer = isset($single_quiz_data[answered_question]) ? $single_quiz_data[answered_question] : "";
 	echo "<tr><td>\n";
 	echo emit_question_status($question_index);
@@ -15,9 +15,12 @@ function emit_question($single_quiz_data,$question_index) {
 	echo $single_quiz_data["question"];
 	echo "</td>\n";
 	echo "<td class=\"possible_answer\">\n";
-	
-	if ($_SESSION['default_free_renponse'] == True) {
-		echo "<input type=\"text\" name=\"q_$question_index\" value=\"$possible_answer\" >";
+	$free_renponse  = isset($single_quiz_data[free_response]) ? str_to_bool($single_quiz_data['free_response']) : $_SESSION['default_free_renponse'];
+	if ($free_renponse  == True ) {
+		$opt = "tabindex=$tab_index ";
+		if ($tab_index==1)
+			$opt .= "autofocus";
+		echo "<input type=\"text\" name=\"q_$question_index\" value=\"$possible_answer\" $opt >";
 	}
 	else {
 		// Multiple Options 
@@ -87,7 +90,7 @@ function emit_quiz_footer($starting_question,$all_answered) {
 	}
 	else {
 		echo "\n";
-		echo '<input type="submit" value="Precedente" Name="Nav">';
+	//	echo '<input type="submit" value="Precedente" Name="Nav">';
 		echo '<input type="submit" value="Prossimo" Name="Nav">';
 		}
 	echo "</form>\n";
@@ -111,7 +114,7 @@ function emit_result() {
 	for($question_index = 0; $question_index < $num_question; ++$question_index) {
 		$answer  = $data_quiz[$question_index]["answered_question"];
 		$correct_answer = $data_quiz[$question_index]["correct_answer"];
-		if ($correct_answer == $answer) {
+		if (trim($correct_answer) == trim($answer)) {
 			$num_correct_answer ++;
 		}
 		else {
@@ -127,7 +130,7 @@ function emit_result() {
 		echo '<tr>';
 		echo '<td>'.$data_quiz[$question_index]["question"].'</td>';
 
-		if ($correct_answer == $answer) {
+		if (trim($correct_answer) == trim($answer)) {
 			// Correct answer
 			echo '<td style="background-color:green;">';
 			echo $answer;

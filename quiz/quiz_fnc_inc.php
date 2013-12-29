@@ -37,7 +37,8 @@ function cmd_inizialize_quiz($quiz_name) {
 
 	$data_quiz_src=csv_to_array($quiz_name);
 	//echo "<hr><pre>";print_r($data_quiz_src);echo "</pre>";
-	shuffle($data_quiz_src);
+	if ($_SESSION['default_randomize_question'] == TRUE) 
+		shuffle($data_quiz_src);
 	$all_possible_answer = array_column_1($data_quiz_src,"correct_answer");
 	$data_quiz = array();
 	
@@ -119,9 +120,10 @@ function cmd_quiz($quiz_name,$starting_question=0) {
 	else 
 		$num_question = count($data_quiz);
 	
-
+	$tab_index = 1;
 	for($question_index = $starting_question; $question_index < $num_question+$starting_question; ++$question_index) {
-		emit_question($data_quiz[$question_index],$question_index);
+		emit_question($data_quiz[$question_index],$question_index,$tab_index);
+		$tab_index ++;
 	}
 
 	emit_quiz_footer($starting_question,$all_answered);
@@ -196,4 +198,18 @@ function choose_file($dir) {
 	return $a_dir[array_rand($a_dir)];
 }
  
+ 
+function str_to_bool($str) {
+// convert a string to a boolean
+	if (trim(strtoupper($str)) == 'TRUE') {
+		$out = true;
+	}
+	elseif (trim(strtoupper($str)) == 'YES') {
+		$out = true;
+	}
+	else {
+		$out = false;
+	}
+	return $out;
+}
 ?>
