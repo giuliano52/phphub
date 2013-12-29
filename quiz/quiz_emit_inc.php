@@ -16,13 +16,19 @@ function emit_question($single_quiz_data,$question_index) {
 	echo "</td>\n";
 	echo "<td class=\"possible_answer\">\n";
 	
-	foreach ($single_quiz_data['possible_answer'] as $possible_answer) {
-		$checked = ($answer == $possible_answer) ? " checked " : "";
-		echo "\t";
-		echo '<input type="radio" name="q_'.$question_index.'" value="'.$possible_answer.'" '.$checked.'>';
-		echo $possible_answer;
-		echo "<br>\n"; 
+	if ($_SESSION['default_free_renponse'] == True) {
+		echo "<input type=\"text\" name=\"q_$question_index\" value=\"$possible_answer\" >";
+	}
+	else {
+		// Multiple Options 
+		foreach ($single_quiz_data['possible_answer'] as $possible_answer) {
+			$checked = ($answer == $possible_answer) ? " checked " : "";
+			echo "\t";
+			echo '<input type="radio" name="q_'.$question_index.'" value="'.$possible_answer.'" '.$checked.'>';
+			echo $possible_answer;
+			echo "<br>\n"; 
 		}
+	}
 	echo "</td></tr>\n";
 }
 
