@@ -49,7 +49,7 @@ function emit_question_status($question_index) {
 			$extra_stle = "";
 		}
 		$content .= "<tr style=\"$extra_stle\" class=\"question_status\">\n";
-		$content .= "\t<td><a href=\"?starting_question=$id\">".$id."</a></td>";
+		$content .= "\t<td><a href=\"?starting_question=$id\">".($id+1)."</a></td>";
 		$content .= "<td><a href=\"?starting_question=$id\">";
 		if (isset($single_question[answered_question])) {
 			$content .= '<img src="img/Circle-question-green.svg" height="30" />';	
@@ -116,7 +116,7 @@ function emit_result() {
 	for($question_index = 0; $question_index < $num_question; ++$question_index) {
 		$answer  = $data_quiz[$question_index]["answered_question"];
 		$correct_answer = $data_quiz[$question_index]["correct_answer"];
-		if (trim($correct_answer) == trim($answer)) {
+		if (trim(strtoupper($correct_answer)) == trim(strtoupper($answer))) {
 			$num_correct_answer ++;
 		}
 		else {
@@ -132,7 +132,7 @@ function emit_result() {
 		echo '<tr>';
 		echo '<td>'.$data_quiz[$question_index]["question"].'</td>';
 
-		if (trim($correct_answer) == trim($answer)) {
+		if (trim(strtoupper($correct_answer)) == trim(strtoupper($answer))) {
 			// Correct answer
 			echo '<td style="background-color:green;">';
 			echo $answer;
