@@ -72,6 +72,7 @@ echo '<html>
 <link rel="stylesheet" type="text/css" href="quiz.css">
 <body>
 ';
+echo "<h1>".$_SESSION['title']."</h1>";
 }
 
 function emit_quiz_header() {

@@ -4,6 +4,7 @@ $debug = FALSE;
 
 function initialize_session() {
 	session_start(); 
+	$_SESSION['title'] = "Rispondi alle domnde";  // title of the quiz
 	$_SESSION['Num_options'] = 4;     // number of option in each question
 	$_SESSION['Num_question_per_page'] = 1 ;  // 0 means no limits
 	$_SESSION['Num_question_total'] = 6 ;  // 0 means all question available
