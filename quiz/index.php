@@ -7,8 +7,9 @@
  */
 
 require_once('conf.php');
-require_once('quiz_emit_inc.php');
-require_once('quiz_fnc_inc.php');
+require_once('include/quiz_emit_inc.php');
+require_once('include/quiz_fnc_inc.php');
+require_once('include/common-inc.php');
 error_reporting(E_ALL);
 
 

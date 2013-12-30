@@ -8,6 +8,7 @@ response_type (optional) : options -> multiple options ; not_null -> anything no
 
 TODO
 - export in PDF
-- possibilità di importare i files per le domande
+- possibilità di importare i files per le domande (es xml)
 - aggiungere tempo di questionario
 - implementare: response_type  not_null, int
+- fa un check di tutte le domande / immagini di complimenti
