@@ -89,8 +89,9 @@ function emit_quiz_footer($starting_question,$all_answered) {
 	echo '<input type="hidden" name="starting_question" value="'.$starting_question.'"> ';
 
 	if ($all_answered == TRUE) {
+		echo "<br /><br />\n";
 		echo "Hai risposto a tutte le domande: Guarda i ";
-		echo '<A href="'.htmlspecialchars($_SERVER["PHP_SELF"]).'?cmd=results">Risultati</A>';
+		echo '<b><a href="'.htmlspecialchars($_SERVER["PHP_SELF"]).'?cmd=results">RISULTATI</a></b>';
 	}
 	else {
 		echo "\n";

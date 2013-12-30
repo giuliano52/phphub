@@ -35,7 +35,11 @@ function test_input($data) {
 function choose_cvs_entry($csv_file) {
 	/* Return a random element from a csv_file */
 	$csv_array = csv_to_array($csv_file);
-	return $csv_array[array_rand($csv_array)]['url'];
+	
+	$id = array_rand($csv_array);
+	
+	//print ($id ."-".count($csv_array));
+	return $csv_array[$id]['url'];
 }
 
 function choose_file($dir) {

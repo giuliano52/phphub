@@ -28,7 +28,6 @@ $previous_starting_question = max($starting_question - $_SESSION['Num_question_p
 
 emit_header();
 
-choose_cvs_entry($_SESSION['congratulation_file']);
 
 switch($cmd) {
     case "reset_quiz";

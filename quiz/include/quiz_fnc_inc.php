@@ -115,10 +115,8 @@ function cmd_quiz($quiz_name,$starting_question=0) {
 		emit_question($data_quiz[$question_index],$question_index,$tab_index);
 		$tab_index ++;
 	}
-
 	emit_quiz_footer($starting_question,$all_answered);
 }
-
 
 
 function cmd_store_answers() {
