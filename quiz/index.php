@@ -9,7 +9,7 @@
 require_once('conf.php');
 require_once('include/quiz_emit_inc.php');
 require_once('include/quiz_fnc_inc.php');
-require_once('include/common-inc.php');
+require_once('include/common_inc.php');
 error_reporting(E_ALL);
 
 
@@ -42,17 +42,16 @@ switch($cmd) {
     case "store_answers":
         cmd_store_answers();
     default:
-	if (isset($_REQUEST['Nav']) && $_REQUEST['Nav'] == "Precedente")
-		$starting_question = $previous_starting_question;
-	elseif (isset($_REQUEST['Nav']) && $_REQUEST['Nav'] == "Prossimo")
-		$starting_question = $next_starting_question;
-	// verifico che lo starting question stia tra 0 e il numero totale di domande
-	if ($starting_question < 0) 
-		$starting_question = 0;
-	if ($starting_question > $_SESSION['Num_question_total']-1) 
-		$starting_question = $_SESSION['Num_question_total']-1;	
-
-	cmd_quiz($_SESSION['Quiz_name'],$starting_question);
+		if (isset($_REQUEST['Nav']) && $_REQUEST['Nav'] == "Precedente") 
+			$starting_question = $previous_starting_question;
+		elseif (isset($_REQUEST['Nav']) && $_REQUEST['Nav'] == "Prossimo") 
+			$starting_question = $next_starting_question;
+		// verifico che lo starting question stia tra 0 e il numero totale di domande
+		if ($starting_question < 0) 
+			$starting_question = 0;
+		if ($starting_question > $_SESSION['Num_question_total']-1) 
+			$starting_question = $_SESSION['Num_question_total']-1;	
+		cmd_quiz($_SESSION['Quiz_name'],$starting_question);
 }
 
 emit_footer();

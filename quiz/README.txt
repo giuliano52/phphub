@@ -12,3 +12,6 @@ TODO
 - aggiungere tempo di questionario
 - implementare: response_type  not_null, int
 - fa un check di tutte le domande / immagini di complimenti
+
+v2.0 
+- inserire la memorizzazione delle risposte giuste in modo da chiedere solo quelle che non si sanno

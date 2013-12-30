@@ -6,47 +6,32 @@
  *
  */
 
-function csv_to_array($filename='', $delimiter=';'){
-    if(!file_exists($filename) || !is_readable($filename))
-        return FALSE;
 
-    $header = NULL;
-    $data = array();
-    if (($handle = fopen($filename, 'r')) !== FALSE)
-    {
-        while (($row = fgetcsv($handle, 1000, $delimiter)) !== FALSE)
-        {
-            if(!$header)
-                $header = $row;
-            else
-                $data[] = array_combine($header, $row);
-        }
-        fclose($handle);
-    }
-    return $data;
-}
-
-function test_input($data) {
-  $data = trim($data);
-  $data = stripslashes($data);
-  $data = htmlspecialchars($data);
-  return $data;
-}
 
 function cmd_inizialize_quiz($quiz_name) {
 
 	$data_quiz_src=csv_to_array($quiz_name);
-	//echo "<hr><pre>";print_r($data_quiz_src);echo "</pre>";
+
 	if ($_SESSION['default_randomize_question'] == TRUE) 
 		shuffle($data_quiz_src);
-	$all_possible_answer = array_column_1($data_quiz_src,"correct_answer");
-	$data_quiz = array();
+
+	// find all possible answer for the test
+	$all_possible_answer = array();
+	foreach ($data_quiz_src as $single_quiz) {
+		$all_correct_answer = explode('|', $single_quiz["correct_answer"]);
+		$all_possible_answer[] = $all_correct_answer [0];
+	}
 	
+
+	$data_quiz = array();
 	// calculate the number of question 
-	if ($_SESSION['Num_question_total'] > 0) 
-		$num_question = min(count($data_quiz_src),$_SESSION['Num_question_total']) ;
-	else 
+	
+	if ($_SESSION['Max_question_total'] > 0) {
+		$num_question = min(count($data_quiz_src),$_SESSION['Max_question_total']) ;
+		}
+	else  {
 		$num_question = count($data_quiz_src);
+		}
 	$_SESSION['Num_question_total'] = $num_question;
 	
 	
@@ -56,14 +41,19 @@ function cmd_inizialize_quiz($quiz_name) {
 
 
 	foreach ($data_quiz_src as $single_quiz) {
-		$difficult_level = isset($single_quiz[difficult_level]) ? $single_quiz[difficult_level] : 0 ;
+		$difficult_level = isset($single_quiz['difficult_level']) ? $single_quiz['difficult_level'] : 0 ;
 		if (($difficult_level >= $_SESSION['min_diffucult_level']) && ($difficult_level <= $_SESSION['max_diffucult_level'])) {
+			
 			// Add item to $data_quiz
 			$data_quiz[$question_id] = $single_quiz;
+			
+			// find all correct answer 
+			$data_quiz[$question_id]['all_correct_answer'] = explode('|', $single_quiz["correct_answer"]);
+			
 			shuffle($all_possible_answer);
 			
-			// add correct answer to $possible_answer
-			$possible_answer = array($data_quiz[$question_id]["correct_answer"]);
+			// add the first correct answer to $possible_answer
+			$possible_answer = array($data_quiz[$question_id]['all_correct_answer'][0]);
 			
 			//  add wrong answer to $possible_answer from input data
 			if (isset($data_quiz[$question_id]["wrong_answer"])) {
@@ -131,36 +121,6 @@ function cmd_quiz($quiz_name,$starting_question=0) {
 
 
 
-
-function array_column_1(array $input, $columnKey, $indexKey = null) {
-        $result = array();
-   
-        if (null === $indexKey) {
-            if (null === $columnKey) {
-                // trigger_error('What are you doing? Use array_values() instead!', E_USER_NOTICE);
-                $result = array_values($input);
-            }
-            else {
-                foreach ($input as $row) {
-                    $result[] = $row[$columnKey];
-                }
-            }
-        }
-        else {
-            if (null === $columnKey) {
-                foreach ($input as $row) {
-                    $result[$row[$indexKey]] = $row;
-                }
-            }
-            else {
-                foreach ($input as $row) {
-                    $result[$row[$indexKey]] = $row[$columnKey];
-                }
-            }
-        }
-   
-        return $result;
-    }
 function cmd_store_answers() {
 	foreach($_REQUEST as $key=>$val) {
 		if(substr($key,0,2)=="q_") {
@@ -173,30 +133,29 @@ function cmd_store_answers() {
 }
 
 function cmd_reset_quiz() {
-
 	session_destroy();
 	// print "session distroyed";
 }
 
-function choose_cvs_entry($csv_file) {
-	/* Return a random element from a csv_file */
-	$csv_array = csv_to_array($csv_file);
-	return $csv_array[array_rand($csv_array)][url];
 
-}
+function quiz_check_answer() {
+	$num_correct_answer = 0;
 
-function choose_file($dir) {
-	$a_dir = array();
-	if ($handle = opendir($dir)) {
-    while (false !== ($entry = readdir($handle))) {
-        if ($entry != "." && $entry != "..") {
-            $a_dir[] = $entry;
-        }
-    }
-    closedir($handle);
+	foreach ($_SESSION['data_quiz'] as $key => $data_single_quiz) {
+		$all_right_question = array();
+		foreach ($data_single_quiz['all_correct_answer'] as $single_correct_answer) {
+			$all_right_question[] = trim(strtoupper($single_correct_answer));
+		}
+		$answered_question = trim(strtoupper($data_single_quiz["answered_question"]));
+		if (in_array($answered_question , $all_right_question)) {
+			$_SESSION['data_quiz'][$key]['answer_is_correct'] = TRUE;
+			$num_correct_answer++;
+			}
+		else
+			$_SESSION['data_quiz'][$key]['answer_is_correct'] = FALSE;
 	}
-	return $a_dir[array_rand($a_dir)];
+	$_SESSION['num_correct_answer']= $num_correct_answer;
+	
 }
- 
  
 ?>

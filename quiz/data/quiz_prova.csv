@@ -1,5 +1,5 @@
 question;correct_answer;response_type
-"Francia";"Parigi";true
+"Francia";Parigi|Paris;text
 "Italia";"Roma";options
 "Spagna";"Madrid";options
-"Regno Unito";"Londra";true
+"Regno Unito";"Londra|London";text
