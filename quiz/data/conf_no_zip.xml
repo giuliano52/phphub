@@ -2,4 +2,5 @@
 <quiz>
 	<title>Indica la Capitale corretta</title>
 	<Quiz_name>data/quiz_prova.csv</Quiz_name>
+	<default_randomize_question>false</default_randomize_question>
 </quiz>

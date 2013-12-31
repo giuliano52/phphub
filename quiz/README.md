@@ -12,7 +12,6 @@ we should use all ascci character, for particuale char use the html encoding;
 
 #TODO
 ##V 1.0
-- possibilità di importare i files per le domande (es xml)
 - implementare: response_type  not_null, int
 - eliminare l'import delle righe vuote dal csv
 - verificare per i caratteri non ascii non codicifati con &egrave; ... ma con &#444
@@ -25,3 +24,6 @@ we should use all ascci character, for particuale char use the html encoding;
 ##v2.0
 - inserire la memorizzazione delle risposte giuste in modo da chiedere solo quelle che non si sanno
 - inserire template 
+
+#DONE
+- Possibility to implement specific configuration from XML file

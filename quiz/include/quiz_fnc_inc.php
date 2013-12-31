@@ -7,6 +7,8 @@
  */
 
 
+
+ 
 function read_xml_quiz_conf($xml_file) {
 	// read xml from file and overrite default _session values
 	$xml = simplexml_load_file($xml_file);
@@ -21,7 +23,7 @@ function cmd_inizialize_quiz($quiz_name) {
 
 	$data_quiz_src=csv_to_array($quiz_name);
 
-	if ($_SESSION['default_randomize_question'] == TRUE) 
+	if (strtoupper($_SESSION['default_randomize_question']) == "TRUE") 
 		shuffle($data_quiz_src);
 
 	// find all possible answer for the test
