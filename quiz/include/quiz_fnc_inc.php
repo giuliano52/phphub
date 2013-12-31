@@ -7,7 +7,16 @@
  */
 
 
-
+function read_xml_quiz_conf($xml_file) {
+	// read xml from file and overrite default _session values
+	$xml = simplexml_load_file($xml_file);
+	foreach($xml->children() as $child) {
+		//echo $child->getName() . ": " . $child . "<br>";
+		$_SESSION[$child->getName()] = (string)$child;
+	}
+}
+ 
+ 
 function cmd_inizialize_quiz($quiz_name) {
 
 	$data_quiz_src=csv_to_array($quiz_name);

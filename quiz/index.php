@@ -16,7 +16,10 @@ error_reporting(E_ALL);
  
 // ------------------------- MAIN --------------------
 
+
 initialize_session() ;
+read_xml_quiz_conf($_SESSION['quiz_configuration']);
+
 $cmd = isset($_REQUEST['cmd']) ? test_input($_REQUEST['cmd']) : "None";
 $starting_question = (int)(isset($_REQUEST['starting_question']) ? test_input($_REQUEST['starting_question']) : 0);
 
@@ -28,11 +31,11 @@ $previous_starting_question = max($starting_question - $_SESSION['Num_question_p
 
 emit_header();
 
-
 switch($cmd) {
     case "reset_quiz";
 		cmd_reset_quiz();
 		initialize_session() ;
+		read_xml_quiz_conf($_SESSION['quiz_configuration']);
 		cmd_quiz($_SESSION['Quiz_name'],$starting_question);
 	break;
     case "results":

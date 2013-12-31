@@ -217,6 +217,10 @@ foreach ($xml->molecule as $record)
    echo $record->code, '<br />';
 }
 ```
+per leggere invece un file:
+```php
+simplexml_load_file($xml_file);
+```
 
 #JSON
 

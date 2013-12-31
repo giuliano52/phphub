@@ -1,6 +1,6 @@
 ﻿<?php
 
-$debug = FALSE;
+$debug = true;
 
 function initialize_session() {
 	session_start(); 
@@ -14,6 +14,8 @@ function initialize_session() {
 	$_SESSION['default_randomize_question'] = TRUE; // TRUE if the question are randimzed
 	$_SESSION['congratulation_file'] = 'conf/congratulation.csv';
 	
+//	$_SESSION['quiz_configuration'] = "zip://./data/quiz_test.zip#conf.xml";
+	$_SESSION['quiz_configuration'] = "./data/conf_no_zip.xml";
 
 
 	
@@ -22,7 +24,9 @@ function initialize_session() {
 //	$_SESSION['Quiz_name'] = 'data/quiz_animali.csv';
 //	$_SESSION['Quiz_name'] = 'data/quiz_somme.csv';
 //	$_SESSION['Quiz_name'] = 'data/quiz_prova.csv';
-$_SESSION['Quiz_name'] = 'data/quiz_vocaboli.csv';
+//	$_SESSION['Quiz_name'] = 'data/quiz_vocaboli.csv';
+$_SESSION['Quiz_name'] = 'data/quiz_vocaboli_reverse.csv';
+
 
 
 }

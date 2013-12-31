@@ -1,0 +1,5 @@
+<?xml version='1.0'?>
+<quiz>
+	<title>Indica la Capitale corretta</title>
+	<Quiz_name>data/quiz_prova.csv</Quiz_name>
+</quiz>
