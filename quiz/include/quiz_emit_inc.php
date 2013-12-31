@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /* Author: GD
  * Created: 20131129
  * Modified: 20131227
@@ -39,7 +39,7 @@ function emit_question($single_quiz_data,$question_index,$tab_index=1) {
 }
 
 function emit_question_status($question_index) {
-	// mostra le domande a cui si � risposto e quelle che mancano
+	// mostra le domande a cui si è risposto e quelle che mancano
 	$content = "<table>\n";
 	
 	foreach  ($_SESSION['data_quiz'] as $id=>$single_question) {

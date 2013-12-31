@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /* Author: GD
  * Created: 20131129
  * Modified: 20131223
@@ -20,7 +20,7 @@ initialize_session() ;
 $cmd = isset($_REQUEST['cmd']) ? test_input($_REQUEST['cmd']) : "None";
 $starting_question = (int)(isset($_REQUEST['starting_question']) ? test_input($_REQUEST['starting_question']) : 0);
 
-// verifico se � stato selezionato prossimo o precedente e modifico di conseguenza il puntatore alle domande
+// verifico se è stato selezionato prossimo o precedente e modifico di conseguenza il puntatore alle domande
 //$next_starting_question = min($starting_question + $_SESSION['Num_question_per_page'],count($_SESSION['data_quiz'])-$_SESSION['Num_question_per_page']);
 $next_starting_question = $starting_question + $_SESSION['Num_question_per_page'];
 $previous_starting_question = max($starting_question - $_SESSION['Num_question_per_page'],0);

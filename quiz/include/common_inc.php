@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 
 function csv_to_array($filename='', $delimiter=';'){
 	// convert a csv file to an array
@@ -28,9 +28,7 @@ function test_input($data) {
 	// clean input 
 	$data = trim($data);
 	$data = stripslashes($data);
-	echo "33-$data-33";
 	$data1 = htmlentities($data);
-	echo "44-$data1-44";
 	return $data1;
 }
 

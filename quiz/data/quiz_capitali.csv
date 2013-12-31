@@ -1,196 +1,196 @@
-question;correct_answer;wrong_answer;free_response ;difficult_level
-Afghanistan       ;Kabul ;;;2
-Albania       ;Tirana ;;;2
-Algeria       ;Algeri ;;;2
-Andorra       ;Andorra la Vella ;;;2
-Angola       ;Luanda ;;;2
-Antigua e Barbuda     ;Saint John's ;;;2
-Arabia Saudita      ;Riy?d ;;;2
-Argentina       ;Buenos Aires ;;;2
-Armenia       ;Yerevan ;;;2
-Australia       ;Canberra ;;;2
-Austria       ;Vienna ;;;2
-Azerbaigian       ;Baku ;;;2
-Bahamas       ;Nassau ;;;2
-Bahrein       ;Manama ;;;2
-Bangladesh       ;Dhaka ;;;2
-Barbados       ;Bridgetown ;;;2
-Belgio       ;Bruxelles ;;;2
-Belize       ;Belmopan ;;;2
-Benin       ;Porto-Novo ;;;2
-Bhutan       ;Thimphu ;;;2
-Bielorussia       ;Minsk ;;;2
-Birmania       ;Naypyidaw ;;;2
-Bolivia       ;Sucre ;;;2
-Bosnia ed Erzegovina     ;Sarajevo ;;;2
-Botswana       ;Gaborone ;;;2
-Brasile       ;Brasilia ;;;2
-Brunei       ;Bandar Seri Begawan ;;;2
-Bulgaria       ;Sofia ;;;2
-Burkina Faso      ;Ouagadougou ;;;2
-Burundi       ;Bujumbura ;;;2
-Cambogia       ;Phnom Penh ;;;2
-Camerun       ;Yaoundé ;;;2
-Canada       ;Ottawa ;;;2
-Capo Verde      ;Praia ;;;2
-Rep. Ceca      ;Praga ;;;2
-Rep. Centrafricana      ;Bangui ;;;2
-Ciad       ;N'Djamena ;;;2
-Cile       ;Santiago ;;;2
-Cina       ;Pechino ;;;2
-Cipro       ;Nicosia ;;;2
-Colombia       ;Bogotá ;;;2
-Comore       ;Moroni ;;;2
-Rep. del Congo     ;Brazzaville ;;;2
-RD del Congo     ;Kinshasa ;;;2
-Corea del Nord     ;Pyongyang ;;;2
-Corea del Sud     ;Seul ;;;2
-Costa d'Avorio      ;Yamoussoukro ;;;2
-Costa Rica      ;San José ;;;2
-Croazia       ;Zagabria ;;;2
-Cuba       ;L'Avana ;;;2
-Danimarca       ;Copenaghen ;;;2
-Dominica       ;Roseau ;;;2
-Rep. Dominicana      ;Santo Domingo ;;;2
-Ecuador       ;Quito ;;;2
-Egitto       ;Il Cairo ;;;2
-El Salvador      ;San Salvador ;;;2
-Emirati Arabi Uniti     ;Abu Dhabi ;;;2
-Eritrea       ;Asmara ;;;2
-Estonia       ;Tallinn ;;;2
-Etiopia       ;Addis Abeba ;;;2
-Figi       ;Suva ;;;2
-Filippine       ;Manila ;;;2
-Finlandia       ;Helsinki ;;;2
-Francia       ;Parigi ;;;1
-Gabon       ;Libreville ;;;2
-Gambia       ;Banjul ;;;2
-Georgia       ;Tbilisi ;;;2
-Germania       ;Berlino ;;;2
-Ghana       ;Accra ;;;2
-Giamaica       ;Kingston ;;;2
-Giappone       ;Tokyo ;;;2
-Gibuti       ;Gibuti ;;;2
-Giordania       ;Amman ;;;2
-Grecia       ;Atene ;;;2
-Grenada       ;Saint George's ;;;2
-Guatemala       ;Città del Guatemala ;;;2
-Guinea       ;Conakry ;;;2
-Guinea-Bissau       ;Bissau ;;;2
-Guinea Equatoriale      ;Malabo ;;;2
-Guyana       ;Georgetown ;;;2
-Haiti       ;Port-au-Prince ;;;2
-Honduras       ;Tegucigalpa ;;;2
-India       ;Nuova Delhi ;;;2
-Indonesia       ;Giakarta ;;;2
-Iran       ;Teheran ;;;2
-Iraq       ;Baghdad ;;;2
-Irlanda       ;Dublino ;;;2
-Islanda       ;Reykjavík ;;;2
-Isole Marshall      ;Majuro ;;;2
-Israele       ;Gerusalemme;;;2
-Italia       ;Roma ;;;1
-Kazakistan       ;Astana ;;;2
-Kenya       ;Nairobi ;;;2
-Kirghizistan       ;Bishkek ;;;2
-Kiribati       ;Bairiki ;;;2
-Kuwait       ;Madinat al-Kuwait ;;;2
-Laos       ;Vientiane ;;;2
-Lesotho       ;Maseru ;;;2
-Lettonia       ;Riga ;;;2
-Libano       ;Beirut ;;;2
-Liberia       ;Monrovia ;;;2
-Libia       ;Tripoli ;;;2
-Liechtenstein       ;Vaduz ;;;2
-Lituania       ;Vilnius ;;;2
-Lussemburgo       ;Lussemburgo ;;;2
-Macedonia       ;Skopje ;;;2
-Madagascar       ;Antananarivo ;;;2
-Malawi       ;Lilongwe ;;;2
-Malesia       ;Kuala Lumpur ;;;2
-Maldive       ;Malé ;;;2
-Mali       ;Bamako ;;;2
-Malta       ;La Valletta ;;;2
-Marocco       ;Rabat ;;;2
-Mauritania       ;Nouakchott ;;;2
-Mauritius       ;Port Louis ;;;2
-Messico       ;Città del Messico ;;;2
-Micronesia       ;Palikir ;;;2
-Moldavia       ;Chi?in?u ;;;2
-Monaco       ;Monaco (città-stato) ;;;2
-Mongolia       ;Ulan Bator ;;;2
-Montenegro       ;Podgorica ;;;2
-Mozambico       ;Maputo ;;;2
-Namibia       ;Windhoek ;;;2
-Nauru       ;Yaren (sede politica) ;;;2
-Nepal       ;Kathmandu ;;;2
-Nicaragua       ;Managua ;;;2
-Niger       ;Niamey ;;;2
-Nigeria       ;Abuja ;;;2
-Norvegia       ;Oslo ;;;2
-Nuova Zelanda      ;Wellington ;;;2
-Oman       ;Mascate ;;;2
-Paesi Bassi      ;Amsterdam ;;;2
-Pakistan       ;Islamabad ;;;2
-Palau       ;Ngerulmud ;;;2
-Panamá       ;Panamá ;;;2
-Papua Nuova Guinea     ;Port Moresby ;;;2
-Paraguay       ;Asunción ;;;2
-Perù       ;Lima ;;;2
-Polonia       ;Varsavia ;;;2
-Portogallo       ;Lisbona ;;;2
-Qatar       ;Doha ;;;2
-Regno Unito      ;Londra ;;;2
-Romania       ;Bucarest ;;;2
-Ruanda       ;Kigali ;;;2
-Russia       ;Mosca ;;;2
-Saint Kitts e Nevis    ;Basseterre ;;;2
-Saint Vincent e Grenadine    ;Kingstown ;;;2
-Isole Salomone Isole Salomone    ;Honiara ;;;2
-Samoa       ;Apia ;;;2
-San Marino San Marino    ;Città di San Marino ;;;2
-Santa Lucia Santa Lucia    ;Castries ;;;2
-São Tomé e Príncipe    ;São Tomé ;;;2
-Senegal       ;Dakar ;;;2
-Serbia       ;Belgrado ;;;2
-Seychelles       ;Port Victoria ;;;2
-Sierra Leone      ;Freetown ;;;2
-Singapore       ;Singapore ;;;2
-Siria       ;Damasco ;;;2
-Slovacchia       ;Bratislava ;;;2
-Slovenia       ;Lubiana ;;;2
-Somalia       ;Mogadiscio ;;;2
-Spagna       ;Madrid ;;;2
-Sri Lanka      ;Sri Jayewardanapura Kotte ;;;2
-Stati Uniti      ;Washington D.C. ;;;2
-Sudafrica       ;Pretoria amministrativa, Città del Capo legislativa, e Bloemfontein giudiziaria ;;;2
-Sudan       ;Khartum ;;;2
-Sudan del Sud     ;Juba ;;;2
-Suriname       ;Paramaribo ;;;2
-Svezia       ;Stoccolma ;;;2
-Svizzera       ;Berna ;;;2
-Swaziland       ;Mbabane amministrativa e giudiziaria, e Lobamba legislativa ;;;2
-Tagikistan       ;Dushanbe ;;;2
-Taiwan       ;Taipei ;;;2
-Tanzania       ;Dodoma ;;;2
-Thailandia       ;Bangkok ;;;2
-Timor Est      ;Dili ;;;2
-Togo       ;Lomé ;;;2
-Tonga       ;Nuku'alofa ;;;2
-Trinidad e Tobago     ;Port of Spain ;;;2
-Tunisia       ;Tunisi ;;;2
-Turchia       ;Ankara ;;;2
-Turkmenistan       ;Ashgabat ;;;2
-Tuvalu       ;Funafuti ;;;2
-Ucraina       ;Kiev ;;;2
-Uganda       ;Kampala ;;;2
-Ungheria       ;Budapest ;;;2
-Uruguay       ;Montevideo ;;;2
-Uzbekistan       ;Tashkent ;;;2
-Vanuatu       ;Port Vila ;;;2
-Città del Vaticano     ;Città del Vaticano (città-stato) ;;;2
-Venezuela       ;Caracas ;;;2
-Vietnam       ;Hanoi ;;;2
-Yemen       ;San'a ;;;2
-Zambia       ;Lusaka ;;;2
-Zimbabwe       ;Harare ;;;2
+id;question;correct_answer;wrong_answer;free_response ;difficult_level
+1;Afghanistan       ;Kabul ;;;2
+2;Albania       ;Tirana ;;;2
+3;Algeria       ;Algeri ;;;2
+4;Andorra       ;Andorra la Vella ;;;2
+5;Angola       ;Luanda ;;;2
+6;Antigua e Barbuda     ;Saint John's ;;;2
+7;Arabia Saudita      ;"Riy&#257;d|Riad";;;2
+8;Argentina       ;Buenos Aires ;;;2
+9;Armenia       ;Yerevan ;;;2
+10;Australia       ;Canberra ;;;2
+11;Austria       ;Vienna ;;;2
+12;Azerbaigian       ;Baku ;;;2
+13;Bahamas       ;Nassau ;;;2
+14;Bahrein       ;Manama ;;;2
+15;Bangladesh       ;Dhaka ;;;2
+16;Barbados       ;Bridgetown ;;;2
+17;Belgio       ;Bruxelles ;;;1
+18;Belize       ;Belmopan ;;;2
+19;Benin       ;Porto-Novo ;;;2
+20;Bhutan       ;Thimphu ;;;2
+21;Bielorussia       ;Minsk ;;;2
+22;Birmania       ;Naypyidaw ;;;2
+23;Bolivia       ;Sucre ;;;2
+24;Bosnia ed Erzegovina     ;Sarajevo ;;;2
+25;Botswana       ;Gaborone ;;;2
+26;Brasile       ;Brasilia ;;;2
+27;Brunei       ;Bandar Seri Begawan ;;;2
+28;Bulgaria       ;Sofia ;;;2
+29;Burkina Faso      ;Ouagadougou ;;;2
+30;Burundi       ;Bujumbura ;;;2
+31;Cambogia       ;Phnom Penh ;;;2
+32;Camerun       ;"Yaound&eacute;|Yaounde|Yaounde�";;;2
+33;Canada       ;Ottawa ;;;2
+34;Capo Verde      ;Praia ;;;2
+35;Rep. Ceca      ;Praga ;;;2
+36;Rep. Centrafricana      ;Bangui ;;;2
+37;Ciad       ;N'Djamena ;;;2
+38;Cile       ;Santiago ;;;2
+39;Cina       ;Pechino ;;;2
+40;Cipro       ;Nicosia ;;;2
+41;Colombia       ;"Bogot&aacute;|Bogot&agrave;|Bogota�";;;2
+42;Comore       ;Moroni ;;;2
+43;Rep. del Congo     ;Brazzaville ;;;2
+44;RD del Congo     ;Kinshasa ;;;2
+45;Corea del Nord     ;Pyongyang ;;;2
+46;Corea del Sud     ;Seul ;;;2
+47;Costa d'Avorio      ;Yamoussoukro ;;;2
+48;Costa Rica      ;"San Jos&eacute;|San Hos&egrave;";;;2
+49;Croazia       ;Zagabria ;;;2
+50;Cuba       ;L'Avana ;;;2
+51;Danimarca       ;Copenaghen ;;;2
+52;Dominica       ;Roseau ;;;2
+53;Rep. Dominicana      ;Santo Domingo ;;;2
+54;Ecuador       ;Quito ;;;2
+55;Egitto       ;Il Cairo ;;;2
+56;El Salvador      ;San Salvador ;;;2
+57;Emirati Arabi Uniti     ;Abu Dhabi ;;;2
+58;Eritrea       ;Asmara ;;;2
+59;Estonia       ;Tallinn ;;;2
+60;Etiopia       ;Addis Abeba ;;;2
+61;Figi       ;Suva ;;;2
+62;Filippine       ;Manila ;;;2
+63;Finlandia       ;Helsinki ;;;2
+64;Francia       ;Parigi ;;;1
+65;Gabon       ;Libreville ;;;2
+66;Gambia       ;Banjul ;;;2
+67;Georgia       ;Tbilisi ;;;2
+68;Germania       ;Berlino ;;;2
+69;Ghana       ;Accra ;;;2
+70;Giamaica       ;Kingston ;;;2
+71;Giappone       ;Tokyo ;;;2
+72;Gibuti       ;Gibuti ;;;2
+73;Giordania       ;Amman ;;;2
+74;Grecia       ;Atene ;;;2
+75;Grenada       ;Saint George's ;;;2
+76;Guatemala       ;"Citt&agrave; del Guatemala ";;;2
+77;Guinea       ;Conakry ;;;2
+78;Guinea-Bissau       ;Bissau ;;;2
+79;Guinea Equatoriale      ;Malabo ;;;2
+80;Guyana       ;Georgetown ;;;2
+81;Haiti       ;Port-au-Prince ;;;2
+82;Honduras       ;Tegucigalpa ;;;2
+83;India       ;Nuova Delhi ;;;2
+84;Indonesia       ;Giakarta ;;;2
+85;Iran       ;Teheran ;;;2
+86;Iraq       ;Baghdad ;;;2
+87;Irlanda       ;Dublino ;;;2
+88;Islanda       ;"Reykjav&iacute;k ";;;2
+89;Isole Marshall      ;Majuro ;;;2
+90;Israele       ;Gerusalemme;;;2
+91;Italia       ;Roma ;;;1
+92;Kazakistan       ;Astana ;;;2
+93;Kenya       ;Nairobi ;;;2
+94;Kirghizistan       ;Bishkek ;;;2
+95;Kiribati       ;Bairiki ;;;2
+96;Kuwait       ;Madinat al-Kuwait ;;;2
+97;Laos       ;Vientiane ;;;2
+98;Lesotho       ;Maseru ;;;2
+99;Lettonia       ;Riga ;;;2
+100;Libano       ;Beirut ;;;2
+101;Liberia       ;Monrovia ;;;2
+102;Libia       ;Tripoli ;;;2
+103;Liechtenstein       ;Vaduz ;;;2
+104;Lituania       ;Vilnius ;;;2
+105;Lussemburgo       ;Lussemburgo ;;;2
+106;Macedonia       ;Skopje ;;;2
+107;Madagascar       ;Antananarivo ;;;2
+108;Malawi       ;Lilongwe ;;;2
+109;Malesia       ;Kuala Lumpur ;;;2
+110;Maldive       ;"Mal&eacute; ";;;2
+111;Mali       ;Bamako ;;;2
+112;Malta       ;La Valletta ;;;2
+113;Marocco       ;Rabat ;;;2
+114;Mauritania       ;Nouakchott ;;;2
+115;Mauritius       ;Port Louis ;;;2
+116;Messico       ;"Citt&agrave; del Messico ";;;2
+117;Micronesia       ;Palikir ;;;2
+118;Moldavia       ;"Chi&#351;in&#259;u ";;;2
+119;Monaco       ;"Monaco (citt&agrave;-stato) ";;;2
+120;Mongolia       ;Ulan Bator ;;;2
+121;Montenegro       ;Podgorica ;;;2
+122;Mozambico       ;Maputo ;;;2
+123;Namibia       ;Windhoek ;;;2
+124;Nauru       ;Yaren (sede politica) ;;;2
+125;Nepal       ;Kathmandu ;;;2
+126;Nicaragua       ;Managua ;;;2
+127;Niger       ;Niamey ;;;2
+128;Nigeria       ;Abuja ;;;2
+129;Norvegia       ;Oslo ;;;2
+130;Nuova Zelanda      ;Wellington ;;;2
+131;Oman       ;Mascate ;;;2
+132;Paesi Bassi      ;Amsterdam ;;;2
+133;Pakistan       ;Islamabad ;;;2
+134;Palau       ;Ngerulmud ;;;2
+135;"Panam&aacute;       ";"Panam&aacute; ";;;2
+136;Papua Nuova Guinea     ;Port Moresby ;;;2
+137;Paraguay       ;"Asunci&oacute;n ";;;2
+138;Per�       ;Lima ;;;2
+139;Polonia       ;Varsavia ;;;2
+140;Portogallo       ;Lisbona ;;;2
+141;Qatar       ;Doha ;;;2
+142;Regno Unito      ;Londra ;;;1
+143;Romania       ;Bucarest ;;;2
+144;Ruanda       ;Kigali ;;;2
+145;Russia       ;Mosca ;;;2
+146;Saint Kitts e Nevis    ;Basseterre ;;;2
+147;Saint Vincent e Grenadine    ;Kingstown ;;;2
+148;Isole Salomone Isole Salomone    ;Honiara ;;;2
+149;Samoa       ;Apia ;;;2
+150;San Marino San Marino    ;"Citt&agrave; di San Marino ";;;2
+151;Santa Lucia Santa Lucia    ;Castries ;;;2
+152;"S&oacute;o Tom&eacute; e Pr&iacute;ncipe    ";"S&oacute;o Tom&eacute; ";;;2
+153;Senegal       ;Dakar ;;;2
+154;Serbia       ;Belgrado ;;;2
+155;Seychelles       ;Port Victoria ;;;2
+156;Sierra Leone      ;Freetown ;;;2
+157;Singapore       ;Singapore ;;;2
+158;Siria       ;Damasco ;;;2
+159;Slovacchia       ;Bratislava ;;;2
+160;Slovenia       ;Lubiana ;;;2
+161;Somalia       ;Mogadiscio ;;;2
+162;Spagna       ;Madrid ;;;2
+163;Sri Lanka      ;Sri Jayewardanapura Kotte ;;;2
+164;Stati Uniti      ;Washington D.C. ;;;2
+165;Sudafrica       ;"Pretoria amministrativa, Citt&agrave; del Capo legislativa, e Bloemfontein giudiziaria ";;;2
+166;Sudan       ;Khartum ;;;2
+167;Sudan del Sud     ;Juba ;;;2
+168;Suriname       ;Paramaribo ;;;2
+169;Svezia       ;Stoccolma ;;;2
+170;Svizzera       ;Berna ;;;2
+171;Swaziland       ;Mbabane amministrativa e giudiziaria, e Lobamba legislativa ;;;2
+172;Tagikistan       ;Dushanbe ;;;2
+173;Taiwan       ;Taipei ;;;2
+174;Tanzania       ;Dodoma ;;;2
+175;Thailandia       ;Bangkok ;;;2
+176;Timor Est      ;Dili ;;;2
+177;Togo       ;"Lom&eacute; ";;;2
+178;Tonga       ;Nuku'alofa ;;;2
+179;Trinidad e Tobago     ;Port of Spain ;;;2
+180;Tunisia       ;Tunisi ;;;2
+181;Turchia       ;Ankara ;;;2
+182;Turkmenistan       ;Ashgabat ;;;2
+183;Tuvalu       ;Funafuti ;;;2
+184;Ucraina       ;Kiev ;;;2
+185;Uganda       ;Kampala ;;;2
+186;Ungheria       ;Budapest ;;;2
+187;Uruguay       ;Montevideo ;;;2
+188;Uzbekistan       ;Tashkent ;;;2
+189;Vanuatu       ;Port Vila ;;;2
+190;"Citt&agrave; del Vaticano     ";"Citt&agrave; del Vaticano (citt&agrave;-stato) ";;;2
+191;Venezuela       ;Caracas ;;;2
+192;Vietnam       ;Hanoi ;;;2
+193;Yemen       ;San'a ;;;2
+194;Zambia       ;Lusaka ;;;2
+195;Zimbabwe       ;Harare ;;;2

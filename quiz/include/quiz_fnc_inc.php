@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 /* Author: GD
  * Created: 20131129
  * Modified: 20131129

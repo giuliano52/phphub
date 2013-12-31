@@ -1,6 +1,6 @@
-<?php
+﻿<?php
 
-$debug = TRUE;
+$debug = FALSE;
 
 function initialize_session() {
 	session_start(); 
@@ -18,10 +18,10 @@ function initialize_session() {
 
 	
 //	$_SESSION['Quiz_name'] = 'data/quiz_bandiere.csv';
-//	$_SESSION['Quiz_name'] = 'data/quiz_capitali.csv';
+	$_SESSION['Quiz_name'] = 'data/quiz_capitali.csv';
 //	$_SESSION['Quiz_name'] = 'data/quiz_animali.csv';
 //	$_SESSION['Quiz_name'] = 'data/quiz_somme.csv';
-	$_SESSION['Quiz_name'] = 'data/quiz_prova.csv';
+//	$_SESSION['Quiz_name'] = 'data/quiz_prova.csv';
 
 
 }
