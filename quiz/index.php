@@ -6,10 +6,10 @@
  *
  */
 
-require_once('conf.php');
-require_once('include/quiz_emit_inc.php');
-require_once('include/quiz_fnc_inc.php');
-require_once('include/common_inc.php');
+require_once('./conf.php');
+require_once('./include/quiz_emit_inc.php');
+require_once('./include/quiz_fnc_inc.php');
+require_once('./include/common_inc.php');
 error_reporting(E_ALL);
 
 
