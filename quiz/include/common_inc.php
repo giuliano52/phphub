@@ -12,6 +12,7 @@ function csv_to_array($filename='', $delimiter=';'){
     {
         while (($row = fgetcsv($handle, 1000, $delimiter)) !== FALSE)
         {
+            if (empty($row)) continue;
             if(!$header)
                 $header = $row;
             else
