@@ -28,8 +28,10 @@ function test_input($data) {
 	// clean input 
 	$data = trim($data);
 	$data = stripslashes($data);
-	$data = htmlspecialchars($data);
-	return $data;
+	echo "33-$data-33";
+	$data1 = htmlentities($data);
+	echo "44-$data1-44";
+	return $data1;
 }
 
 function choose_cvs_entry($csv_file) {
