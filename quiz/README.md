@@ -12,12 +12,12 @@ we should use all ascci character, for particuale char use the html encoding;
 
 #TODO
 ##V 1.0
-[] export in PDF
+- export in PDF
 - possibilità di importare i files per le domande (es xml)
 - aggiungere tempo di questionario
 - implementare: response_type  not_null, int
 - eliminare l'import delle righe vuote dal csv
-- ~inserire i caratteri non ascii nelle domande~
+- verificare per i caratteri non ascii non codicifati con &egrave; ... ma con &#444
 - supportare i caratteri accentati nelle risposte
 
 ##v2.0 

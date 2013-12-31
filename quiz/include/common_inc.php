@@ -57,39 +57,4 @@ function choose_file($dir) {
 }
  
 
- 
- 
-
-function array_column_1(array $input, $columnKey, $indexKey = null) {
-		// implement the function array_column for php <5.5 
-		// Return the values from a single column in the input array 
-        $result = array();
-   
-        if (null === $indexKey) {
-            if (null === $columnKey) {
-                // trigger_error('What are you doing? Use array_values() instead!', E_USER_NOTICE);
-                $result = array_values($input);
-            }
-            else {
-                foreach ($input as $row) {
-                    $result[] = $row[$columnKey];
-                }
-            }
-        }
-        else {
-            if (null === $columnKey) {
-                foreach ($input as $row) {
-                    $result[$row[$indexKey]] = $row;
-                }
-            }
-            else {
-                foreach ($input as $row) {
-                    $result[$row[$indexKey]] = $row[$columnKey];
-                }
-            }
-        }
-   
-        return $result;
-}
-
 ?>
