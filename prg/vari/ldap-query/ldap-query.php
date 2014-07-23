@@ -30,7 +30,7 @@ $comando = 'ldapsearch -x -h '.$conf['server'].' -D "'.$conf['bind_user'].'" -LL
 foreach ($input_list as $element)  {
 
 	
-	$comando_elemento = str_replace("####1####", $element, $comando);
+	$comando_elemento = str_replace("####1####", trim($element), $comando);
 	
 	
 	exec ('echo "################################'.$element.'##########################################" >>out.txt');
